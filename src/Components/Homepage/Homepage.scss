@@ -1,0 +1,43 @@
+@import '../Variables/Variables.scss';
+
+.homepage {
+    height: 92vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    .homepage__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+
+        .homepage__info__title-small {
+            font-size: 1.6rem;
+        }
+
+        .homepage__info__title {
+            font-size: 8rem;
+        }
+
+        .homepage__info__para {
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 3rem;
+        }
+
+        .homepage__info__title, .homepage__info__title-small, .homepage__info__para {
+            padding: 0rem 0rem 2rem 0rem;
+            color: $white;
+        }
+    }
+
+    .homepage__button {
+        padding: 7rem 4rem;
+        border-radius: 50%;
+        border: none;
+        font-size: 2rem;
+    }
+}
