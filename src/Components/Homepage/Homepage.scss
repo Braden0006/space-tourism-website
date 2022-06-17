@@ -16,16 +16,20 @@
 
         .homepage__info__title-small {
             font-size: 1.6rem;
+            font-family: $barlow-condensed;
+            letter-spacing: 0.3rem;
         }
 
         .homepage__info__title {
             font-size: 8rem;
+            font-family: $bellefair;
         }
 
         .homepage__info__para {
             font-size: 1.5rem;
             text-align: center;
             line-height: 3rem;
+            font-family: $barlow;
         }
 
         .homepage__info__title, .homepage__info__title-small, .homepage__info__para {
@@ -39,5 +43,6 @@
         border-radius: 50%;
         border: none;
         font-size: 2rem;
+        font-family: $bellefair;
     }
 }
