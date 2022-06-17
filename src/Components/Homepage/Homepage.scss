@@ -16,6 +16,7 @@
 
         .homepage__info__title-small {
             font-size: 1.6rem;
+            color: $light-blue;
             font-family: $barlow-condensed;
             letter-spacing: 0.3rem;
         }
@@ -23,6 +24,7 @@
         .homepage__info__title {
             font-size: 8rem;
             font-family: $bellefair;
+            color: $white;
         }
 
         .homepage__info__para {
@@ -30,11 +32,11 @@
             text-align: center;
             line-height: 3rem;
             font-family: $barlow;
+            color: $light-blue;
         }
 
-        .homepage__info__title, .homepage__info__title-small, .homepage__info__para {
+        .homepage__info__title, .homepage__info__title-small {
             padding: 0rem 0rem 2rem 0rem;
-            color: $white;
         }
     }
 
@@ -44,5 +46,6 @@
         border: none;
         font-size: 2rem;
         font-family: $bellefair;
+        color: $black;
     }
 }
