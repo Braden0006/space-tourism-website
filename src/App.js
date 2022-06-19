@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 
 import Navbar from "./Components/Navbar/Navbar";
 import Homepage from "./Components/Homepage/Homepage";
-import MoonDestination from "./Components/MoonDestination/MoonDestination";
+import Carousel from "./Components/Carousel/Carousel";
 
 import "./App.css";
 
@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/moon-destination" element={<MoonDestination />} />
+        <Route path="/moon-destination" element={<Carousel />} />
       </Routes>
       {/* </div> */}
     </>

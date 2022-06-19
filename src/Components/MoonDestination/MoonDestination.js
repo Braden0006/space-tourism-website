@@ -1,13 +1,7 @@
-import React from "react";
-
-import "./MoonDestination.css";
+import React from 'react'
 
 export default function MoonDestination() {
   return (
-    <main className="moon">
-      <h5>
-        <span>01</span> PICK YOUR DESTINATION
-      </h5>
-    </main>
-  );
+    <div>MoonDestination</div>
+  )
 }

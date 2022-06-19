@@ -1,0 +1,17 @@
+.moon {
+    background: url('../Background-img/background-destination-mobile.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .moon__destination {
+        color: white
+    }
+
+    .moon__img {
+        height: 17rem;
+    }
+}
