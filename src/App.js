@@ -4,6 +4,8 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import Homepage from "./Components/Homepage/Homepage";
 import Carousel from "./Components/Carousel/Carousel";
+import CarouselItem from "./Components/CarouselItem/CarouselItem";
+import MoonDestination from "./Components/MoonDestination/MoonDestination";
 
 import "./App.css";
 
@@ -14,7 +16,16 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/moon-destination" element={<Carousel />} />
+        <Route
+          path="/moon-destination"
+          element={
+            <Carousel>
+              <CarouselItem>
+                <MoonDestination />
+              </CarouselItem>
+            </Carousel>
+          }
+        />
       </Routes>
       {/* </div> */}
     </>

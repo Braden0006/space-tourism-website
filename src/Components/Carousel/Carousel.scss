@@ -1,4 +1,4 @@
-.moon {
+.main {
     background: url('../Background-img/background-destination-mobile.jpg');
     background-size: cover;
     height: 100vh;
@@ -7,11 +7,15 @@
     align-items: center;
     flex-direction: column;
 
-    .moon__destination {
-        color: white
+    .main__destination {
+        color: white;
     }
 
-    .moon__img {
-        height: 17rem;
+    .main__carousel {
+        overflow: hidden;
+
+        .main__carousel__inner {
+            transition: transfrom 0.3s;
+        }
     }
 }
