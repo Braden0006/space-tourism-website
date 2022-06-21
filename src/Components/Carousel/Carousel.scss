@@ -13,9 +13,18 @@
 
     .main__carousel {
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        .main__carousel__buttons {
+            display: flex;
+            justify-content: center;
+        }
 
         .main__carousel__inner {
             transition: transfrom 0.3s;
+            // transform: translateX(00%);
+            white-space: nowrap;
         }
     }
 }

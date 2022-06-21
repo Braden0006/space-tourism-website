@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-import './CarouselItem.css'
+import "./CarouselItem.css";
 
-export default function CarouselItem({ children }) {
+export default function CarouselItem({ children, width }) {
   return (
-    <div className='carousel-item'>
-        {children}
+    <div className="carousel-item" style={{ width: width }}>
+      {children}
     </div>
-  )
+  );
 }

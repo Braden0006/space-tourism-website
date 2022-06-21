@@ -6,28 +6,31 @@ import Homepage from "./Components/Homepage/Homepage";
 import Carousel from "./Components/Carousel/Carousel";
 import CarouselItem from "./Components/CarouselItem/CarouselItem";
 import MoonDestination from "./Components/MoonDestination/MoonDestination";
+import MarsDestination from "./Components/MarsDestination/MarsDestination";
 
 import "./App.css";
 
 function App() {
   return (
     <>
-      {/* <div className="main-page"> */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route
-          path="/moon-destination"
+          path="/destinations"
           element={
             <Carousel>
               <CarouselItem>
                 <MoonDestination />
               </CarouselItem>
+
+              <CarouselItem>
+                <MarsDestination />
+              </CarouselItem>
             </Carousel>
           }
         />
       </Routes>
-      {/* </div> */}
     </>
   );
 }
