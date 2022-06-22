@@ -40,6 +40,8 @@ function App() {
             </Carousel>
           }
         />
+
+        <Route path="/crew" />
       </Routes>
     </>
   );
