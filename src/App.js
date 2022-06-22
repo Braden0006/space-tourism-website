@@ -7,6 +7,7 @@ import Carousel from "./Components/Carousel/Carousel";
 import CarouselItem from "./Components/CarouselItem/CarouselItem";
 import MoonDestination from "./Components/MoonDestination/MoonDestination";
 import MarsDestination from "./Components/MarsDestination/MarsDestination";
+import EuropaDestination from "./Components/EuropaDestination/EuropaDestination";
 
 import "./App.css";
 
@@ -26,6 +27,10 @@ function App() {
 
               <CarouselItem>
                 <MarsDestination />
+              </CarouselItem>
+
+              <CarouselItem>
+                <EuropaDestination />
               </CarouselItem>
             </Carousel>
           }

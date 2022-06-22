@@ -17,7 +17,7 @@ export default function Carousel({ children }) {
     setActiveIndex(newIndex);
   };
 
-  const destinations = [{ Moon: 0 }, { Mars: 1 }];
+  const destinations = [{ Moon: 0 }, { Mars: 1 }, { Europa: 2 }];
 
   const images = [
     { id: 0, image: moon },
@@ -28,7 +28,8 @@ export default function Carousel({ children }) {
     <main className="main">
       <div className="main__carousel">
         <h5 className="main__destination">
-          <span className="main__destination__number">01</span> PICK YOUR DESTINATION
+          <span className="main__destination__number">01</span> PICK YOUR
+          DESTINATION
         </h5>
         <div className="main__carousel__img">
           {React.Children.map(children, (child, index) => {
@@ -40,7 +41,7 @@ export default function Carousel({ children }) {
                       return images[img].image;
                     }
                   }
-                  return null
+                  return null;
                 })}
                 alt=""
               />
@@ -63,7 +64,7 @@ export default function Carousel({ children }) {
                       return `${key}`;
                     }
                   }
-                  return null
+                  return null;
                 })}
               </button>
             );

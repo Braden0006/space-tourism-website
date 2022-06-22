@@ -1,0 +1,45 @@
+@import '../PlanetVariable/PlanetVariable.scss';
+
+.europa {
+    @include planet;
+
+    .europa__title {
+        @include planet__title;
+    }
+
+    .europa__description {
+        @include planet__description;
+    }
+
+    .europa__line {
+        @include planet__line;
+    }
+
+    .europa__travel {
+
+
+        .europa__travel__distance {
+            @include planet__travel__distance;
+    
+            .europa__travel__distance__heading {
+                @include planet__travel__distance__heading;
+            }
+    
+            .europa__travel__distance__number {
+                @include planet__travel__distance__number;
+            }
+        }
+
+        .europa__travel__time {
+            @include planet__travel__time;
+
+            .europa__travel__time__heading {
+                @include planet__travel__time__heading;
+            }
+
+            .europa__travel__time__number {
+                @include planet__travel__time__number;
+            }
+        }
+    }
+}
