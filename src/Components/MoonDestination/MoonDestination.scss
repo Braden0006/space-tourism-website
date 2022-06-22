@@ -1,11 +1,70 @@
+@import '../Variables/Variables.scss';
+
 .moon {
-    width: 90%;
+    width: 85%;
     display: flex;
     height: 30rem;
     flex-direction: column;
     align-items: center;
 
-    .moon__img {
-        height: 17rem;
+    .moon__title {
+        font-size: $fifty-six;
+        color: $white;
+        font-family: $bellefair;
     }
+
+    .moon__description {
+        font-size: $fifteen;
+        color: $light-blue;
+        font-family: $barlow;
+        text-align: center;
+        line-height: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .moon__line {
+        width: 100%;
+        border: 1px solid $dark-grey;
+    }
+
+    .moon__travel {
+
+
+        .moon__travel__distance {
+            width: 15rem;
+            margin-top: 2rem;
+            text-align: center;
+    
+            .moon__travel__distance__heading {
+                font-size: $fourteen;
+                color: $light-blue;
+                font-family: $barlow-condensed;
+            }
+    
+            .moon__travel__distance__number {
+                font-size: $twenty-eight;
+                color: $white;
+                font-family: $bellefair;
+            }
+        }
+
+        .moon__travel__time {
+            width: 15rem;
+            text-align: center;
+            margin-top: 2rem;
+
+            .moon__travel__time__heading {
+                font-size: $fourteen;
+                font-family: $barlow-condensed;
+                color: $light-blue;
+            }
+
+            .moon__travel__time__number {
+                font-size: $twenty-eight;
+                font-family: $bellefair;
+                color: $white;
+            }
+        }
+    }
+
 }

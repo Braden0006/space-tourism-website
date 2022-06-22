@@ -1,3 +1,5 @@
+@import '../Variables/Variables.scss';
+
 .main {
     background: url('../Background-img/background-destination-mobile.jpg');
     background-size: cover;
@@ -9,16 +11,47 @@
 
     .main__destination {
         color: white;
+        font-size: $sixteen;
+        text-align: center;
+        font-family: $barlow-condensed;
+        letter-spacing: $letter-spacing;
+
+        .main__destination__number {
+            margin-right: 1rem;
+            color: $dark-grey;
+        }
+    }
+
+    .main__carousel__img {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0rem;
     }
 
     .main__carousel {
         overflow: hidden;
         display: flex;
+        height: 100vh;
         flex-direction: column;
+        justify-content: center;
 
         .main__carousel__buttons {
             display: flex;
+            margin: 2rem 0rem;
             justify-content: center;
+            
+            .main__carousel__buttons-button {
+                background-color: transparent;
+                border: none;
+                color: $light-blue;
+                display: flex;
+                margin: 0rem 1rem;
+                justify-content: center;
+                width: 3rem;
+                font-size: $fourteen;
+                font-family: $barlow-condensed;
+                padding-bottom: 1rem;
+            }
         }
 
         .main__carousel__inner {
