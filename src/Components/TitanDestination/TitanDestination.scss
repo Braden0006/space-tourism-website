@@ -1,0 +1,45 @@
+@import '../PlanetVariable/PlanetVariable.scss';
+
+.titan {
+    @include planet;
+
+    .titan__title {
+        @include planet__title;
+    }
+
+    .titan__description {
+        @include planet__description;
+    }
+
+    .titan__line {
+        @include planet__line;
+    }
+
+    .titan__travel {
+
+
+        .titan__travel__distance {
+            @include planet__travel__distance;
+    
+            .titan__travel__distance__heading {
+                @include planet__travel__distance__heading;
+            }
+    
+            .titan__travel__distance__number {
+                @include planet__travel__distance__number;
+            }
+        }
+
+        .titan__travel__time {
+            @include planet__travel__time;
+
+            .titan__travel__time__heading {
+                @include planet__travel__time__heading;
+            }
+
+            .titan__travel__time__number {
+                @include planet__travel__time__number;
+            }
+        }
+    }
+}

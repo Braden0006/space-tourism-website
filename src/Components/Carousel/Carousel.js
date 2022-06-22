@@ -17,7 +17,7 @@ export default function Carousel({ children }) {
     setActiveIndex(newIndex);
   };
 
-  const destinations = [{ Moon: 0 }, { Mars: 1 }, { Europa: 2 }];
+  const destinations = [{ Moon: 0 }, { Mars: 1 }, { Europa: 2 }, { Titan: 3 }];
 
   const images = [
     { id: 0, image: moon },

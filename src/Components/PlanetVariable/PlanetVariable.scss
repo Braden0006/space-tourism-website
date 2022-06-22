@@ -1,7 +1,7 @@
 @import '../Variables/Variables.scss';
 
 @mixin planet {
-    width: 60%;
+    width: 45%;
     display: flex;
     height: 30rem;
     flex-direction: column;
@@ -38,6 +38,7 @@
     font-size: $fourteen;
     color: $light-blue;
     font-family: $barlow-condensed;
+    padding-bottom: 1rem;
 }
 
 @mixin planet__travel__distance__number {
@@ -56,6 +57,7 @@
     font-size: $fourteen;
     font-family: $barlow-condensed;
     color: $light-blue;
+    padding-bottom: 1rem;
 }
 
 @mixin planet__travel__time__number {

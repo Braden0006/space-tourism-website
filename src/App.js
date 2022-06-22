@@ -8,6 +8,7 @@ import CarouselItem from "./Components/CarouselItem/CarouselItem";
 import MoonDestination from "./Components/MoonDestination/MoonDestination";
 import MarsDestination from "./Components/MarsDestination/MarsDestination";
 import EuropaDestination from "./Components/EuropaDestination/EuropaDestination";
+import TitanDestination from "./Components/TitanDestination/TitanDestination";
 
 import "./App.css";
 
@@ -31,6 +32,10 @@ function App() {
 
               <CarouselItem>
                 <EuropaDestination />
+              </CarouselItem>
+
+              <CarouselItem>
+                <TitanDestination />
               </CarouselItem>
             </Carousel>
           }
