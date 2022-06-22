@@ -1,6 +1,45 @@
-.mars {
+@import '../PlanetVariable/PlanetVariable.scss';
 
-    .mars__img {
-        height: 17rem;
+.mars {
+    @include planet;
+
+    .mars__title {
+        @include planet__title;
+    }
+
+    .mars__description {
+        @include planet__description;
+    }
+
+    .mars__line {
+        @include planet__line;
+    }
+
+    .mars__travel {
+
+
+        .mars__travel__distance {
+            @include planet__travel__distance;
+    
+            .mars__travel__distance__heading {
+                @include planet__travel__distance__heading;
+            }
+    
+            .mars__travel__distance__number {
+                @include planet__travel__distance__number;
+            }
+        }
+
+        .mars__travel__time {
+            @include planet__travel__time;
+
+            .mars__travel__time__heading {
+                @include planet__travel__time__heading;
+            }
+
+            .mars__travel__time__number {
+                @include planet__travel__time__number;
+            }
+        }
     }
 }
