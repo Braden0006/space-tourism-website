@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+
 import moon from "../Images/DestinationImg/image-moon.webp";
 import mars from "../Images/DestinationImg/image-mars.webp";
+import europa from '../Images/DestinationImg/image-europa.webp'
+import titan from '../Images/DestinationImg/image-titan.webp'
 
 import "./Carousel.css";
 
@@ -25,6 +28,8 @@ export default function Carousel({ children }) {
   const images = [
     { id: 0, image: moon },
     { id: 1, image: mars },
+    { id: 2, image: europa },
+    { id: 3, image: titan }
   ];
 
   return (
@@ -36,7 +41,7 @@ export default function Carousel({ children }) {
         </h5>
         <div className="main__carousel__img">
           <img
-            className="crew-main__carousel__img-image"
+            className="main__carousel__img-image"
             src={images.map((image) => {
               if (activeIndex === image.id) {
                 return image.image;
