@@ -1,0 +1,11 @@
+.crew-main {
+
+    .crew-main__carousel {
+        overflow: hidden;
+
+        .crew-main__carousel__inner {
+            white-space: nowrap;
+            transition: transform 0.3s;
+        }
+    }
+}
