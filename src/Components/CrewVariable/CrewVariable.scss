@@ -1,0 +1,30 @@
+@import '../Variables/Variables.scss';
+
+@mixin crew {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin crew__position {
+    font-size: $sixteen;
+    color: $lighter-white;
+    padding-bottom: 1rem;
+    font-family: $bellefair;
+}
+
+@mixin crew__name {
+    font-size: $twenty-four;
+    color: $white;
+    margin-bottom: 2rem;
+    font-family: $bellefair;
+}
+
+@mixin crew__description {
+    font-size: $fifteen;
+    color: $light-blue;
+    text-align: center;
+    line-height: 3rem;
+    font-family: $barlow;
+}
