@@ -7,6 +7,7 @@ import "./Carousel.css";
 export default function Carousel({ children }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
+  // Function to update the index
   const updateIndex = (newIndex) => {
     if (newIndex < 0) {
       newIndex = 0;
@@ -17,8 +18,10 @@ export default function Carousel({ children }) {
     setActiveIndex(newIndex);
   };
 
+  // Object of destinations to map over and determine which button goes to what component based on the index
   const destinations = [{ Moon: 0 }, { Mars: 1 }, { Europa: 2 }, { Titan: 3 }];
 
+  // Object of images to map over and display in the DOM
   const images = [
     { id: 0, image: moon },
     { id: 1, image: mars },
@@ -27,8 +30,8 @@ export default function Carousel({ children }) {
   return (
     <main className="main">
       <div className="main__carousel">
-        <h5 className="main__destination">
-          <span className="main__destination__number">01</span> PICK YOUR
+        <h5 className="main__carousel__destination">
+          <span className="main__carousel__destination__number">01</span> PICK YOUR
           DESTINATION
         </h5>
         <div className="main__carousel__img">

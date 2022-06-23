@@ -9,6 +9,8 @@ import MoonDestination from "./Components/MoonDestination/MoonDestination";
 import MarsDestination from "./Components/MarsDestination/MarsDestination";
 import EuropaDestination from "./Components/EuropaDestination/EuropaDestination";
 import TitanDestination from "./Components/TitanDestination/TitanDestination";
+import CrewCarousel from "./Components/CrewCarousel/CrewCarousel";
+import CrewA from './Components/CrewA/CrewA'
 
 import "./App.css";
 
@@ -41,7 +43,14 @@ function App() {
           }
         />
 
-        <Route path="/crew" />
+        <Route
+          path="/crew"
+          element={
+            <CrewCarousel>
+              <CarouselItem><CrewA /></CarouselItem>
+            </CrewCarousel>
+          }
+        />
       </Routes>
     </>
   );

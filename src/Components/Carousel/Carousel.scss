@@ -9,14 +9,14 @@
     align-items: center;
     flex-direction: column;
 
-    .main__destination {
+    .main__carousel__destination {
         color: white;
         font-size: $sixteen;
         text-align: center;
         font-family: $barlow-condensed;
         letter-spacing: $letter-spacing;
 
-        .main__destination__number {
+        .main__carousel__destination__number {
             margin-right: 1rem;
             color: $dark-grey;
         }
@@ -56,7 +56,6 @@
 
         .main__carousel__inner {
             transition: transfrom 0.3s;
-            // transform: translateX(00%);
             white-space: nowrap;
         }
     }
