@@ -1,0 +1,17 @@
+@import '../CrewVariable/CrewVariable.scss';
+
+.crew-b {
+    @include crew;
+
+    .crew-b__position {
+        @include crew__position;
+    }
+
+    .crew-b__name {
+        @include crew__name;
+    }
+
+    .crew-b__description {
+        @include crew__description;
+    }
+}

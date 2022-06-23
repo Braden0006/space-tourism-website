@@ -9,31 +9,32 @@
     align-items: center;
     flex-direction: column;
 
-    .main__carousel__destination {
-        color: white;
-        font-size: $sixteen;
-        text-align: center;
-        font-family: $barlow-condensed;
-        letter-spacing: $letter-spacing;
-
-        .main__carousel__destination__number {
-            margin-right: 1rem;
-            color: $dark-grey;
-        }
-    }
-
-    .main__carousel__img {
-        display: flex;
-        justify-content: center;
-        margin: 2rem 0rem;
-    }
-
+    
     .main__carousel {
         overflow: hidden;
         display: flex;
         height: 100vh;
         flex-direction: column;
         justify-content: center;
+
+        .main__carousel__destination {
+            color: white;
+            font-size: $sixteen;
+            text-align: center;
+            font-family: $barlow-condensed;
+            letter-spacing: $letter-spacing;
+    
+            .main__carousel__destination__number {
+                margin-right: 1rem;
+                color: $dark-grey;
+            }
+        }
+    
+        .main__carousel__img {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0rem;
+        }
 
         .main__carousel__buttons {
             display: flex;
@@ -55,8 +56,8 @@
         }
 
         .main__carousel__inner {
-            transition: transfrom 0.3s;
             white-space: nowrap;
+            transition: transform 0.3s;
         }
     }
 }
