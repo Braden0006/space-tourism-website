@@ -1,5 +1,6 @@
 // Colors
 $white: white;
+$lighter-white: rgba(255, 255, 255, 0.692);
 $black: #0B0D17;
 $light-blue: #D0D6F9;
 $dark-grey: #383B4B;
@@ -13,73 +14,9 @@ $bellefair: "Bellefair", serif;
 $eighty: 8rem;
 $fifty-six: 5.6rem;
 $twenty-eight: 2.8rem;
+$twenty-four: 2.4rem;
 $twenty: 2rem;
 $sixteen: 1.6rem;
 $fifteen: 1.5rem;
 $fourteen: 1.4rem;
 $letter-spacing: .27rem;
-
-// Mixins
-@mixin planet {
-    width: 85%;
-    display: flex;
-    height: 30rem;
-    flex-direction: column;
-    align-items: center;
-}
-
-@mixin planet__title {
-    font-size: $fifty-six;
-    color: $white;
-    font-family: $bellefair;
-}
-
-@mixin planet__description {
-    font-size: $fifteen;
-    color: $light-blue;
-    font-family: $barlow;
-    text-align: center;
-    line-height: 2.5rem;
-    margin-bottom: 3rem;
-}
-
-@mixin planet__line {
-    width: 100%;
-    border: 1px solid $dark-grey;
-}
-
-@mixin planet__travel__distance {
-    width: 15rem;
-    margin-top: 2rem;
-    text-align: center;
-}
-
-@mixin planet__travel__distance__heading {
-    font-size: $fourteen;
-    color: $light-blue;
-    font-family: $barlow-condensed;
-}
-
-@mixin planet__travel__distance__number {
-    font-size: $twenty-eight;
-    color: $white;
-    font-family: $bellefair;
-}
-
-@mixin planet__travel__time {
-    width: 15rem;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-@mixin planet__travel__time__heading {
-    font-size: $fourteen;
-    font-family: $barlow-condensed;
-    color: $light-blue;
-}
-
-@mixin planet__travel__time__number {
-    font-size: $twenty-eight;
-    font-family: $bellefair;
-    color: $white;
-}

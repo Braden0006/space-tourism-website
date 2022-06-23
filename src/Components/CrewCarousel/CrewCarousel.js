@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import douglas from "../Images/CrewImg/image-douglas-hurley.webp";
+import mark from "../Images/CrewImg/image-mark-shuttleworth.webp";
+import victor from "../Images/CrewImg/image-victor-glover.webp";
+import anousheh from "../Images/CrewImg/image-anousheh-ansari.webp";
 
 import "./CrewCarousel.css";
 
@@ -17,19 +21,46 @@ export default function CrewCarousel({ children }) {
   };
 
   // Object to display the buttons based on what child it is
-  const crew = [{ one: 1 }, { two: 2 }, { three: 3 }, { four: 4 }];
+  const crew = [{ "": 0 }, { "": 1 }, { "": 2 }, { "": 3 }];
+
+  // Object to display the crew images when mapped over in the DOM
+  const images = [
+    { id: 0, image: douglas },
+    { id: 1, image: mark },
+    { id: 2, image: victor },
+    { id: 3, image: anousheh },
+  ];
 
   return (
     <main className="crew-main">
       <div className="crew-main__carousel">
         <h5 className="crew-main__carousel__title">
-          <span>02</span> MEET YOUR CREW
+          <span className="crew-main__carousel__title-number">02</span> MEET
+          YOUR CREW
         </h5>
+
+        <div className="crew-main__carousel__img">
+          <img
+            className="crew-main__carousel__img-image"
+            src={images.map((image) => {
+              if (image.id === crewActiveIndex) {
+                return image.image;
+              } else {
+                return null;
+              }
+            })}
+            key={images.map((image) => {
+              return image.id;
+            })}
+            alt=""
+          />
+        </div>
 
         <div className="crew-main__carousel__buttons">
           {React.Children.map(children, (child, index) => {
             return (
               <button
+                className="crew-main__carousel__buttons-button"
                 onClick={() => {
                   updateIndex(index);
                 }}
@@ -40,7 +71,7 @@ export default function CrewCarousel({ children }) {
                       return `${key}`;
                     }
                   }
-                  return null
+                  return null;
                 })}
               </button>
             );

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import moon from "../Images/image-moon.webp";
-import mars from "../Images/image-mars.webp";
+import moon from "../Images/DestinationImg/image-moon.webp";
+import mars from "../Images/DestinationImg/image-mars.webp";
 
 import "./Carousel.css";
 
@@ -31,25 +31,24 @@ export default function Carousel({ children }) {
     <main className="main">
       <div className="main__carousel">
         <h5 className="main__carousel__destination">
-          <span className="main__carousel__destination__number">01</span> PICK YOUR
-          DESTINATION
+          <span className="main__carousel__destination__number">01</span> PICK
+          YOUR DESTINATION
         </h5>
         <div className="main__carousel__img">
-          {React.Children.map(children, (child, index) => {
-            return (
-              <img
-                src={images.map((img) => {
-                  for (img in images) {
-                    if (index === images[img].id) {
-                      return images[img].image;
-                    }
-                  }
-                  return null;
-                })}
-                alt=""
-              />
-            );
-          })}
+          <img
+            className="crew-main__carousel__img-image"
+            src={images.map((image) => {
+              if (activeIndex === image.id) {
+                return image.image;
+              } else {
+                return null;
+              }
+            })}
+            key={images.map((image) => {
+              return image.id;
+            })}
+            alt=""
+          />
         </div>
 
         <div className="main__carousel__buttons">

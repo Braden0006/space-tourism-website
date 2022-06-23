@@ -1,3 +1,5 @@
+@import '../Variables/Variables.scss';
+
 .crew-main {
     background: url('../Background-img/background-crew-mobile.jpg');
     background-size: cover;
@@ -9,9 +11,44 @@
     .crew-main__carousel {
         overflow: hidden;
 
+        .crew-main__carousel__title {
+            color: $white;
+            text-align: center;
+            font-size: $sixteen;
+            font-family: $barlow-condensed;
+            letter-spacing: $letter-spacing;
+
+            .crew-main__carousel__title-number {
+                padding-right: 0.8rem;
+                color: $dark-grey;
+            }
+        }
+
+        .crew-main__carousel__img {
+            height: 22.3rem;
+            display: flex;
+            justify-content: center;
+
+            .crew-main__carousel__img-image {
+                height: 22.3rem;
+            }
+        }
+
         .crew-main__carousel__inner {
             white-space: nowrap;
             transition: transform 0.3s;
+        }
+
+        .crew-main__carousel__buttons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+            
+            .crew-main__carousel__buttons-button {
+                border: none;
+                border-radius: 50%;
+                height: 1.2rem;
+            }
         }
     }
 }

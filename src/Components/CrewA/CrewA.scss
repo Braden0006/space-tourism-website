@@ -1,0 +1,30 @@
+@import '../Variables/Variables.scss';
+
+.crew-a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .crew-a__position {
+        font-size: $sixteen;
+        color: $lighter-white;
+        padding-bottom: 1rem;
+        font-family: $bellefair;
+    }
+
+    .crew-a__name {
+        font-size: $twenty-four;
+        color: $white;
+        margin-bottom: 2rem;
+        font-family: $bellefair;
+    }
+
+    .crew-a__description {
+        font-size: $fifteen;
+        color: $light-blue;
+        text-align: center;
+        line-height: 3rem;
+        font-family: $barlow;
+    }
+}
