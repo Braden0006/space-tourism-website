@@ -40,20 +40,23 @@ export default function CrewCarousel({ children }) {
         </h5>
 
         <div className="crew-main__carousel__img">
-          <img
-            className="crew-main__carousel__img-image"
-            src={images.map((image) => {
-              if (image.id === crewActiveIndex) {
-                return image.image;
-              } else {
-                return null;
-              }
-            })}
-            key={images.map((image) => {
-              return image.id;
-            })}
-            alt=""
-          />
+          <div className="crew-main__carousel__img-container">
+            <img
+              className="crew-main__carousel__img-container-image"
+              src={images.map((image) => {
+                if (image.id === crewActiveIndex) {
+                  return image.image;
+                } else {
+                  return null;
+                }
+              })}
+              key={images.map((image) => {
+                return image.id;
+              })}
+              alt=""
+            />
+            <div className="crew-main__carousel__img-line"></div>
+          </div>
         </div>
 
         <div className="crew-main__carousel__buttons">

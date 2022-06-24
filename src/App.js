@@ -14,6 +14,7 @@ import TitanDestination from "./Components/TitanDestination/TitanDestination";
 import CrewCarousel from "./Components/CrewCarousel/CrewCarousel";
 import CrewA from "./Components/CrewA/CrewA";
 import CrewB from "./Components/CrewB/CrewB";
+import CrewC from "./Components/CrewC/CrewC";
 
 import "./App.css";
 
@@ -56,6 +57,10 @@ function App() {
 
               <CarouselItem>
                 <CrewB />
+              </CarouselItem>
+
+              <CarouselItem>
+                <CrewC />
               </CarouselItem>
             </CrewCarousel>
           }

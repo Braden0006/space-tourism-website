@@ -27,9 +27,20 @@
         .crew-main__carousel__img {
             display: flex;
             justify-content: center;
+            margin: 2rem 0rem;
 
-            .crew-main__carousel__img-image {
-                height: 22.3rem;
+            .crew-main__carousel__img-container {
+                text-align: center;
+                margin: 0;
+
+                .crew-main__carousel__img-container-image {
+                    height: 22.3rem;
+                }
+            }
+
+            .crew-main__carousel__img-line {
+                width: 90vw;
+                border: 1px solid $dark-grey;
             }
         }
 
