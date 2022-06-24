@@ -48,7 +48,7 @@ export default function Carousel({ children }) {
               } else {
                 return null;
               }
-            })}
+            }).join(' ')}
             key={images.map((image) => {
               return image.id;
             })}

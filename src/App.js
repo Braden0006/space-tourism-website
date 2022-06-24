@@ -15,6 +15,7 @@ import CrewCarousel from "./Components/CrewCarousel/CrewCarousel";
 import CrewA from "./Components/CrewA/CrewA";
 import CrewB from "./Components/CrewB/CrewB";
 import CrewC from "./Components/CrewC/CrewC";
+import CrewD from "./Components/CrewD/CrewD";
 
 import "./App.css";
 
@@ -61,6 +62,10 @@ function App() {
 
               <CarouselItem>
                 <CrewC />
+              </CarouselItem>
+
+              <CarouselItem>
+                <CrewD />
               </CarouselItem>
             </CrewCarousel>
           }

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import douglas from "../Images/CrewImg/image-douglas-hurley.webp";
 import mark from "../Images/CrewImg/image-mark-shuttleworth.webp";
 import victor from "../Images/CrewImg/image-victor-glover.webp";
@@ -25,10 +26,10 @@ export default function CrewCarousel({ children }) {
 
   // Object to display the crew images when mapped over in the DOM
   const images = [
-    { id: 0, image: douglas },
-    { id: 1, image: mark },
-    { id: 2, image: victor },
-    { id: 3, image: anousheh },
+    {id: 0, image: douglas},
+    {id: 1, image: mark},
+    {id: 2, image: victor},
+    {id: 3, image: anousheh},
   ];
 
   return (
@@ -49,7 +50,7 @@ export default function CrewCarousel({ children }) {
                 } else {
                   return null;
                 }
-              })}
+              }).join('')}
               key={images.map((image) => {
                 return image.id;
               })}
