@@ -1,0 +1,17 @@
+.technology-main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../Background-img/Technology/background-technology-mobile.jpg');
+    background-size: cover;
+
+    .technology-main__carousel {
+        overflow: hidden;
+
+        .technology-main__carousel__inner {
+            white-space: nowrap;
+            transition: transform 0.3s;
+        }
+    }
+}

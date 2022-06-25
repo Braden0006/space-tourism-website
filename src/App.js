@@ -17,6 +17,8 @@ import CrewB from "./Components/CrewB/CrewB";
 import CrewC from "./Components/CrewC/CrewC";
 import CrewD from "./Components/CrewD/CrewD";
 
+import TechnologyCarousel from "./Components/TechnologyCarousel/TechnologyCarousel";
+
 import "./App.css";
 
 function App() {
@@ -70,6 +72,12 @@ function App() {
             </CrewCarousel>
           }
         />
+
+        <Route path="/technology" element={
+          <TechnologyCarousel>
+
+          </TechnologyCarousel>
+        }/>
       </Routes>
     </>
   );

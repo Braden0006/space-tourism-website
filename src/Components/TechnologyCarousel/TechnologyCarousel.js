@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./TechnologyCarousel.css";
 
-export default function TechnologyCarousel() {
+export default function TechnologyCarousel({ children }) {
   const [technologyActiveIndex, setTechnologyActiveIndex] = useState(0);
 
   const updateIndex = (newIndex) => {
