@@ -30,8 +30,9 @@ export default function TechnologyCarousel({ children }) {
   return (
     <main className="technology-main">
       <div className="technology-main__carousel">
-        <h5>
-          <span>03</span>SPACE LAUNCH 101
+        <h5 className="technology-main__carousel__title">
+          <span className="technology-main__carousel__title-number">03</span>
+          SPACE LAUNCH 101
         </h5>
 
         <div className="technology-main__carousel__img-container">

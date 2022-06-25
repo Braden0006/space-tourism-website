@@ -11,6 +11,18 @@
     .technology-main__carousel {
         overflow: hidden;
 
+        .technology-main__carousel__title {
+            color: $white;
+            font-size: $sixteen;
+            font-family: $barlow-condensed;
+            letter-spacing: $letter-spacing;
+
+            .technology-main__carousel__title-number {
+                color: $dark-grey;
+                padding-right: 1.5rem;
+            }
+        }
+
         .technology-main__carousel__inner {
             white-space: nowrap;
             transition: transform 0.3s;
