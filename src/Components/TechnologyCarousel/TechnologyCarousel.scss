@@ -1,3 +1,5 @@
+@import '../Variables/Variables.scss';
+
 .technology-main {
     height: 100vh;
     display: flex;
@@ -13,5 +15,16 @@
             white-space: nowrap;
             transition: transform 0.3s;
         }
+
+        .technology-main__carousel__img-container {
+
+            .technology-main__carousel__img {
+
+                .technology-main__carousel__img-image {
+                    height: $oneseventy;
+                }
+            }
+        }
     }
+
 }
