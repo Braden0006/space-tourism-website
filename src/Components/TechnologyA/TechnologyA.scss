@@ -1,0 +1,24 @@
+@import '../Variables/Variables.scss';
+
+.tech-a {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .tech-a__title {
+        color: $white;
+        font-size: $twenty-four;
+        font-family: $bellefair;
+        padding-bottom: 2rem;
+    }
+
+    .tech-a__info {
+        color: $light-blue;
+        text-align: center;
+        font-size: $fifteen;
+        font-family: $barlow;
+        line-height: 3rem;
+        width: 90vw;
+    }
+}
