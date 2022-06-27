@@ -52,3 +52,31 @@
         color: $black;
     }
 }
+
+// Media Querys
+@media screen and (min-width: 768px) {
+    .homepage {
+        background: url('../Background-img/Home/background-home-tablet.jpg');
+
+        .homepage__info {
+
+            .homepage__info__title-small {
+                font-size: $twenty;
+            }
+
+            .homepage__info__title {
+                font-size: $onefifty;
+            }
+
+            .homepage__info__para {
+                font-size: $sixteen;
+                width: 58vw;
+            }
+        }
+
+        .homepage__button {
+            font-size: $thirtytwo;
+            padding: 9.5rem 5rem;
+        }
+    }
+}
