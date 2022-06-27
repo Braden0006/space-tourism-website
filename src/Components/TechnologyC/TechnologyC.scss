@@ -1,0 +1,13 @@
+@import '../TechnologyVariable/Technology.scss';
+
+.tech-c {
+    @include tech;
+
+    .tech-c__title {
+        @include tech__title;
+    }
+
+    .tech-c__info {
+        @include tech__info;
+    }
+}

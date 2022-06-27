@@ -20,6 +20,7 @@ import CrewD from "./Components/CrewD/CrewD";
 import TechnologyCarousel from "./Components/TechnologyCarousel/TechnologyCarousel";
 import TechnologyA from "./Components/TechnologyA/TechnologyA";
 import TechnologyB from "./Components/TechnologyB/TechnologyB";
+import TechnologyC from "./Components/TechnologyC/TechnologyC";
 
 import "./App.css";
 
@@ -75,17 +76,24 @@ function App() {
           }
         />
 
-        <Route path="/technology" element={
-          <TechnologyCarousel>
-            <CarouselItem>
-              <TechnologyA />
-            </CarouselItem>
+        <Route
+          path="/technology"
+          element={
+            <TechnologyCarousel>
+              <CarouselItem>
+                <TechnologyA />
+              </CarouselItem>
 
-            <CarouselItem>
-              <TechnologyB />
-            </CarouselItem>
-          </TechnologyCarousel>
-        }/>
+              <CarouselItem>
+                <TechnologyB />
+              </CarouselItem>
+
+              <CarouselItem>
+                <TechnologyC />
+              </CarouselItem>
+            </TechnologyCarousel>
+          }
+        />
       </Routes>
     </>
   );
