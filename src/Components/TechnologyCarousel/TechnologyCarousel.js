@@ -27,6 +27,12 @@ export default function TechnologyCarousel({ children }) {
     { id: 2, image: spaceport },
   ];
 
+  const indexNumber = [
+    { '0': 1 },
+    { '1': 2 },
+    { '2': 3 },
+  ]
+
   return (
     <main className="technology-main">
       <div className="technology-main__carousel">
@@ -57,9 +63,16 @@ export default function TechnologyCarousel({ children }) {
             return (
               <button
                 className="technology-main__carousel__buttons-button"
-                onClick={updateIndex(index)}
+                onClick={() => updateIndex(index)}
               >
-                {index}
+                {indexNumber.map((item) => {
+                  for (const [key, value] of Object.entries(item)) {
+                    if (parseInt(key) === technologyActiveIndex) {
+                      return `${value}`;
+                    }
+                  }
+                  return null
+                })}
               </button>
             );
           })}

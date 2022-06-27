@@ -18,6 +18,7 @@ import CrewC from "./Components/CrewC/CrewC";
 import CrewD from "./Components/CrewD/CrewD";
 
 import TechnologyCarousel from "./Components/TechnologyCarousel/TechnologyCarousel";
+import TechnologyA from "./Components/TechnologyA/TechnologyA";
 
 import "./App.css";
 
@@ -75,7 +76,9 @@ function App() {
 
         <Route path="/technology" element={
           <TechnologyCarousel>
-
+            <CarouselItem>
+              <TechnologyA />
+            </CarouselItem>
           </TechnologyCarousel>
         }/>
       </Routes>
