@@ -19,6 +19,7 @@ import CrewD from "./Components/CrewD/CrewD";
 
 import TechnologyCarousel from "./Components/TechnologyCarousel/TechnologyCarousel";
 import TechnologyA from "./Components/TechnologyA/TechnologyA";
+import TechnologyB from "./Components/TechnologyB/TechnologyB";
 
 import "./App.css";
 
@@ -78,6 +79,10 @@ function App() {
           <TechnologyCarousel>
             <CarouselItem>
               <TechnologyA />
+            </CarouselItem>
+
+            <CarouselItem>
+              <TechnologyB />
             </CarouselItem>
           </TechnologyCarousel>
         }/>
