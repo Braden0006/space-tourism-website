@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 import launch from "../Images/TechnologyImg/image-launch-vehicle-landscape.jpg";
-import space from "../Images/TechnologyImg/image-space-capsule-portrait.jpg";
-import spaceport from "../Images/TechnologyImg/image-spaceport-portrait.jpg";
+import spaceport from "../Images/TechnologyImg/image-spaceport-landscape.jpg";
+import space from "../Images/TechnologyImg/image-space-capsule-landscape.jpg";
 
 import "./TechnologyCarousel.css";
 
@@ -23,8 +23,8 @@ export default function TechnologyCarousel({ children }) {
   // An array of objects of images to display depending on the index
   const images = [
     { id: 0, image: launch },
-    { id: 1, image: space },
-    { id: 2, image: spaceport },
+    { id: 1, image: spaceport },
+    { id: 2, image: space },
   ];
 
   const indexNumber = [{ 0: 1 }, { 1: 2 }, { 2: 3 }];
@@ -63,7 +63,7 @@ export default function TechnologyCarousel({ children }) {
               >
                 {indexNumber.map((item) => {
                   for (const [key, value] of Object.entries(item)) {
-                    if (parseInt(key) === technologyActiveIndex) {
+                    if (parseInt(key) === index) {
                       return `${value}`;
                     }
                   }
