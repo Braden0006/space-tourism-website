@@ -1,10 +1,15 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import "./Menu.css";
 
 export default function Menu({ open, toggle }) {
   return (
-    <section className="menu-container">
+    <motion.section
+      className="menu-container"
+      initial={{ x: "100rem" }}
+      animate={{ x: open ? 0 : "100rem" }}
+    >
       <div className="menu">
         <div className="menu__icon">
           <svg
@@ -34,6 +39,6 @@ export default function Menu({ open, toggle }) {
           </li>
         </ul>
       </div>
-    </section>
+    </motion.section>
   );
 }

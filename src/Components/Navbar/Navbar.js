@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 import Menu from "../Menu/Menu";
 
@@ -25,7 +26,10 @@ export default function Navbar() {
           </g>
         </svg>
 
-        <svg
+        <motion.svg
+          initial={{ opacity: 0 }}
+          animate={{ opacity: isOpen ? 0 : 1 }}
+          transition={{ duration: 0.1 }}
           onClick={() => toggleMenu()}
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -34,7 +38,7 @@ export default function Navbar() {
           <g fill="#D0D6F9" fillRule="evenodd">
             <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
           </g>
-        </svg>
+        </motion.svg>
         <Menu open={isOpen} toggle={toggleMenu} />
       </nav>
     </>
