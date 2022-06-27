@@ -1,24 +1,13 @@
-@import '../Variables/Variables.scss';
+@import '../TechnologyVariable/Technology.scss';
 
 .tech-a {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include tech;
 
     .tech-a__title {
-        color: $white;
-        font-size: $twenty-four;
-        font-family: $bellefair;
-        padding-bottom: 2rem;
+        @include tech__title;
     }
 
     .tech-a__info {
-        color: $light-blue;
-        text-align: center;
-        font-size: $fifteen;
-        font-family: $barlow;
-        line-height: 3rem;
-        width: 90vw;
+        @include tech__info;
     }
 }

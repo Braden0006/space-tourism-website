@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["TechnologyA.scss","../Variables/Variables.scss"],"names":[],"mappings":"AAEA,QACI,gBACA,aACA,sBACA,mBAEA,uBACI,MCRA,KDSA,UCOM,ODNN,YCDI,kBDEJ,oBAGJ,sBACI,MCZK,QDaL,kBACA,UCEE,ODDF,YCXC,oBDYD,iBACA","file":"TechnologyA.css"}
+{"version":3,"sourceRoot":"","sources":["TechnologyA.scss","../TechnologyVariable/Technology.scss","../Variables/Variables.scss"],"names":[],"mappings":"AAEA,QCCI,gBACA,aACA,sBACA,mBDDA,uBCKA,MCTI,KDUJ,UCMU,ODLV,YCFQ,kBDGR,oBDJA,sBCQA,MCbS,QDcT,kBACA,UCCM,mBAZD,oBDaL,iBACA","file":"TechnologyA.css"}
