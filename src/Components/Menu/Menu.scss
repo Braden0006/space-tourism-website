@@ -1,40 +1,44 @@
-@import '../Variables/Variables.scss';
+@import "../Variables/Variables.scss";
 
 .menu-container {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-end;
-    top: 0;
-    left: 0;
-    transition: 0.3s;
-    
-    .menu {
-        width: 68vw;
-        backdrop-filter: blur(4rem);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
 
-        .menu__icon {
-            display: flex;
-            justify-content: flex-end;
-            padding: 3rem 2rem;
-        }
+  .menu {
+    width: 68vw;
+    backdrop-filter: blur(4rem);
 
-        .menu__list {
-            list-style: none;
-            margin-top: 3rem;
-
-            .menu__list-item {
-                color: $white;
-                font-size: $sixteen;
-                padding: 2rem 0rem;
-                font-family: $barlow-condensed;
-                letter-spacing: $letter-spacing;
-
-                .menu__list-item-number {
-                    font-weight: bolder;
-                }
-            }
-        }
+    .menu__icon {
+      display: flex;
+      justify-content: flex-end;
+      padding: 3rem 2rem;
     }
+
+    .menu__list {
+      list-style: none;
+      margin-top: 3rem;
+
+      .menu__list-item {
+        font-size: $sixteen;
+        padding: 2rem 0rem;
+        font-family: $barlow-condensed;
+        letter-spacing: $letter-spacing;
+
+        .menu__list-link {
+            text-decoration: none;
+            color: $white;
+        }
+
+        .menu__list-item-number {
+          font-weight: bolder;
+        }
+      }
+    }
+  }
 }

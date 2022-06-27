@@ -1,4 +1,6 @@
 import React from "react";
+
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import "./Menu.css";
@@ -26,16 +28,28 @@ export default function Menu({ open, toggle }) {
         </div>
         <ul className="menu__list">
           <li className="menu__list-item">
-            <span className="menu__list-item-number">00</span> HOME
+            <Link className="menu__list-link" to="/" onClick={toggle}>
+              <span className="menu__list-item-number">00</span> HOME
+            </Link>
           </li>
           <li className="menu__list-item">
-            <span className="menu__list-item-number">01</span> DESTINATION
+            <Link
+              className="menu__list-link"
+              to="/destinations"
+              onClick={toggle}
+            >
+              <span className="menu__list-item-number">01</span> DESTINATION
+            </Link>
           </li>
           <li className="menu__list-item">
-            <span className="menu__list-item-number">02</span> CREW
+            <Link className="menu__list-link" to="/crew" onClick={toggle}>
+              <span className="menu__list-item-number">02</span> CREW
+            </Link>
           </li>
           <li className="menu__list-item">
-            <span className="menu__list-item-number">03</span> TECHNOLOGY
+            <Link className="menu__list-link" to="/technology" onClick={toggle}>
+              <span className="menu__list-item-number">03</span> TECHNOLOGY
+            </Link>
           </li>
         </ul>
       </div>
