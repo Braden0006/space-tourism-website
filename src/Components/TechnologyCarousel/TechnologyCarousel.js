@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import launch from "../Images/TechnologyImg/image-launch-vehicle-portrait.jpg";
+import launch from "../Images/TechnologyImg/image-launch-vehicle-landscape.jpg";
 import space from "../Images/TechnologyImg/image-space-capsule-portrait.jpg";
 import spaceport from "../Images/TechnologyImg/image-spaceport-portrait.jpg";
 
@@ -27,11 +27,7 @@ export default function TechnologyCarousel({ children }) {
     { id: 2, image: spaceport },
   ];
 
-  const indexNumber = [
-    { '0': 1 },
-    { '1': 2 },
-    { '2': 3 },
-  ]
+  const indexNumber = [{ 0: 1 }, { 1: 2 }, { 2: 3 }];
 
   return (
     <main className="technology-main">
@@ -41,22 +37,22 @@ export default function TechnologyCarousel({ children }) {
           SPACE LAUNCH 101
         </h5>
 
-        <div className="technology-main__carousel__img-container">
-          <div className="technology-main__carousel__img">
-            <img
-              className="technology-main__carousel__img-image"
-              src={images
-                .map((image) => {
-                  if (image.id === technologyActiveIndex) {
-                    return image.image;
-                  }
-                  return null;
-                })
-                .join(" ")}
-              alt="Images of the technology used"
-            />
-          </div>
+        {/* <div className="technology-main__carousel__img-container"> */}
+        <div className="technology-main__carousel__img">
+          <img
+            className="technology-main__carousel__img-image"
+            src={images
+              .map((image) => {
+                if (image.id === technologyActiveIndex) {
+                  return image.image;
+                }
+                return null;
+              })
+              .join(" ")}
+            alt="Images of the technology used"
+          />
         </div>
+        {/* </div> */}
 
         <div className="technology-main__carousel__buttons">
           {React.Children.map(children, (child, index) => {
@@ -71,12 +67,16 @@ export default function TechnologyCarousel({ children }) {
                       return `${value}`;
                     }
                   }
-                  return null
+                  return null;
                 })}
               </button>
             );
           })}
         </div>
+
+        <span className="technology-main__carousel__terminology">
+          THE TERMINOLOGY...
+        </span>
 
         <div
           className="technology-main__carousel__inner"

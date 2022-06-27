@@ -1,42 +1,63 @@
-@import '../Variables/Variables.scss';
+@import "../Variables/Variables.scss";
 
 .technology-main {
-    height: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../Background-img/Technology/background-technology-mobile.jpg");
+  background-size: cover;
+
+  .technology-main__carousel {
+    overflow: hidden;
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background: url('../Background-img/Technology/background-technology-mobile.jpg');
-    background-size: cover;
+    height: 78vh;
 
-    .technology-main__carousel {
-        overflow: hidden;
+    .technology-main__carousel__title {
+      color: $white;
+      font-size: $sixteen;
+      font-family: $barlow-condensed;
+      letter-spacing: $letter-spacing;
+      margin-bottom: 3rem;
 
-        .technology-main__carousel__title {
-            color: $white;
-            font-size: $sixteen;
-            font-family: $barlow-condensed;
-            letter-spacing: $letter-spacing;
-
-            .technology-main__carousel__title-number {
-                color: $dark-grey;
-                padding-right: 1.5rem;
-            }
-        }
-
-        .technology-main__carousel__inner {
-            white-space: nowrap;
-            transition: transform 0.3s;
-        }
-
-        .technology-main__carousel__img-container {
-
-            .technology-main__carousel__img {
-
-                .technology-main__carousel__img-image {
-                    height: $oneseventy;
-                }
-            }
-        }
+      .technology-main__carousel__title-number {
+        color: $dark-grey;
+        padding-right: 1.5rem;
+      }
     }
 
+    .technology-main__carousel__inner {
+      white-space: nowrap;
+      transition: transform 0.3s;
+    }
+
+    .technology-main__carousel__img {
+      margin-bottom: 3rem;
+
+      .technology-main__carousel__img-image {
+        width: 100vw;
+        height: $oneseventy;
+      }
+    }
+
+    .technology-main__carousel__buttons {
+      margin-bottom: 3rem;
+
+      .technology-main__carousel__buttons-button {
+        padding: 1.2rem 1.6rem;
+        border-radius: 50%;
+        border: none;
+      }
+    }
+
+    .technology-main__carousel__terminology {
+      color: $light-blue;
+      font-size: $fourteen;
+      font-family: $barlow-condensed;
+      letter-spacing: $letter-spacing;
+    }
+  }
 }
