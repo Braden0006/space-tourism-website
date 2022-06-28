@@ -81,3 +81,33 @@
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .homepage {
+        background: url('../Background-img/Home/background-home-desktop.jpg');
+        background-size: cover;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .homepage__info {
+            width: auto;
+            align-items: flex-start;
+
+            .homepage__info__title-small {
+                font-size: $twenty-eight;
+            }
+
+            .homepage__info__para {
+                text-align: start;
+                width: 32vw;
+                font-size: $eighteen;
+            }
+        }
+
+        .homepage__button {
+            margin-top: 18rem;
+            padding: 11rem 6rem;
+            margin-left: 20rem;
+        }
+    }
+}
