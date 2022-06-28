@@ -42,3 +42,42 @@
     }
   }
 }
+
+// Media Query
+@media screen and (min-width: 768px) {
+    .menu-container {
+        transform: translateX(0) !important;
+        position: relative;
+        width: auto;
+        height: auto;
+
+        .menu {
+            backdrop-filter: none;
+            display: flex;
+            justify-content: flex-end;
+            height: 9rem;
+
+            .menu__icon {
+              display: none;
+            }
+
+            .menu__list {
+              margin-top: 0rem;
+              background: $lightest-white;
+              backdrop-filter: blur(10rem);
+              display: flex;
+              padding: 0rem;
+              justify-content: space-evenly;
+              align-items: center;
+              width: 62vw;
+
+              .menu__list-item {
+
+                .menu__list-item-number {
+                  display: none;
+                }
+              }
+            }
+        }
+    }
+}

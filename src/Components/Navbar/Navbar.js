@@ -16,7 +16,12 @@ export default function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+        <svg
+          className="navbar__logo"
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+        >
           <g fill="none" fillRule="evenodd">
             <circle cx="24" cy="24" r="24" fill="#FFF" />
             <path
@@ -27,6 +32,7 @@ export default function Navbar() {
         </svg>
 
         <motion.svg
+          className="navbar__hamburger"
           initial={{ opacity: 0 }}
           animate={{ opacity: isOpen ? 0 : 1 }}
           transition={{ duration: 0.1 }}

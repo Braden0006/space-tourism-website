@@ -7,3 +7,19 @@
     width: 100vw;
     z-index: 1;
 }
+
+// Media Query
+@media screen and (min-width: 768px) {
+    .navbar {
+        padding: 0rem;
+
+        .navbar__logo {
+            width: 8rem;
+            padding-left: 3rem;
+        }
+
+        .navbar__hamburger {
+            display: none;
+        }
+    }
+}
