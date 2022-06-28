@@ -2,13 +2,16 @@
 
 .mars {
     @include planet;
+    @include for-tablet__planet;
 
     .mars__title {
         @include planet__title;
+        @include for-tablet__planet__title;
     }
 
     .mars__description {
         @include planet__description;
+        @include for-tablet__planet__description;
     }
 
     .mars__line {
@@ -16,7 +19,7 @@
     }
 
     .mars__travel {
-
+        @include for-tablet__planet__travel;
 
         .mars__travel__distance {
             @include planet__travel__distance;

@@ -73,16 +73,17 @@
         background: url('../Background-img/Destination/background-destination-tablet.jpg');
 
         .main__carousel {
+            align-items: center;
 
             .main__carousel__destination {
                 display: flex;
-                padding-left: 6rem;
+                width: 90vw;
                 font-size: $twenty;
-                margin-top: 6rem;
+                margin-top: 8rem;
             }
 
             .main__carousel__img {
-                margin-top: 8rem;
+                margin-top: 10rem;
 
                 .main__carousel__img-image {
                     height: 30rem;

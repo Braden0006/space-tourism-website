@@ -20,7 +20,7 @@
     }
 
     .moon__travel {
-        @include for-tabler__planet__travel;
+        @include for-tablet__planet__travel;
 
         .moon__travel__distance {
             @include planet__travel__distance;

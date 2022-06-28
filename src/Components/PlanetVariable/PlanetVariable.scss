@@ -69,7 +69,7 @@
 // Media Query
 @mixin for-tablet__planet {
     @media screen and (min-width: 768px) {
-        width: 70%;
+        width: 60%;
     }
 }
 
@@ -85,7 +85,7 @@
     }
 }
 
-@mixin for-tabler__planet__travel {
+@mixin for-tablet__planet__travel {
     @media screen and (min-width: 768px) {
         display: flex;
         margin-top: 3rem;
