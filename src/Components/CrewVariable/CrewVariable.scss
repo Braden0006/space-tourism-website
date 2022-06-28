@@ -1,31 +1,57 @@
-@import '../Variables/Variables.scss';
+@import "../Variables/Variables.scss";
 
 @mixin crew {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
 }
 
 @mixin crew__position {
-    font-size: $sixteen;
-    color: $lighter-white;
-    padding-bottom: 1rem;
-    font-family: $bellefair;
+  font-size: $sixteen;
+  color: $lighter-white;
+  padding-bottom: 1rem;
+  font-family: $bellefair;
 }
 
 @mixin crew__name {
-    font-size: $twenty-four;
-    color: $white;
-    margin-bottom: 2rem;
-    font-family: $bellefair;
+  font-size: $twenty-four;
+  color: $white;
+  margin-bottom: 2rem;
+  font-family: $bellefair;
 }
 
 @mixin crew__description {
-    font-size: $fifteen;
-    color: $light-blue;
-    text-align: center;
-    line-height: 3rem;
-    font-family: $barlow;
+  font-size: $fifteen;
+  color: $light-blue;
+  text-align: center;
+  line-height: 3rem;
+  font-family: $barlow;
+}
+
+// Media Querys
+@mixin for-tablet-crew {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 4rem;
+  }
+}
+
+@mixin for-tablet-crew__position {
+  @media screen and (min-width: 768px) {
+    font-size: $twenty-four;
+  }
+}
+
+@mixin for-tablet-crew__name {
+  @media screen and (min-width: 768px) {
+    font-size: $forty;
+  }
+}
+
+@mixin for-tablet-crew__description {
+  @media screen and (min-width: 768px) {
+    font-size: $sixteen;
+    width: 61vw;
+  }
 }

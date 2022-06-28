@@ -1,17 +1,21 @@
-@import '../CrewVariable/CrewVariable.scss';
+@import "../CrewVariable/CrewVariable.scss";
 
 .crew-a {
-    @include crew;
+  @include crew;
+  @include for-tablet-crew;
 
-    .crew-a__position {
-        @include crew__position;
-    }
+  .crew-a__position {
+    @include crew__position;
+    @include for-tablet-crew__position;
+  }
 
-    .crew-a__name {
-        @include crew__name;
-    }
+  .crew-a__name {
+    @include crew__name;
+    @include for-tablet-crew__name;
+  }
 
-    .crew-a__description {
-        @include crew__description;
-    }
+  .crew-a__description {
+    @include crew__description;
+    @include for-tablet-crew__description;
+  }
 }
