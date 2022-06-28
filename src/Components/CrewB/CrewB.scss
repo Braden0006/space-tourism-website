@@ -16,6 +16,6 @@
 
     .crew-b__description {
         @include crew__description;
-        @include for-tablet-crew__description;
+        @include for-tablet-crew-b__description;
     }
 }

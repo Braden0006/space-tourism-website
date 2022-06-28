@@ -55,3 +55,17 @@
     width: 61vw;
   }
 }
+
+@mixin for-tablet-crew-b__description {
+  @media screen and (min-width: 768px) {
+    width: 68vw;
+    font-size: $sixteen;
+  }
+}
+
+@mixin for-tablet-crew-c__description {
+  @media screen and (min-width: 768px) {
+    width: 78vw;
+    font-size: $sixteen;
+  }
+}
