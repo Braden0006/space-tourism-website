@@ -2,16 +2,20 @@
 
 .crew-b {
     @include crew;
+    @include for-tablet-crew;
 
     .crew-b__position {
         @include crew__position;
+        @include for-tablet-crew__position;
     }
 
     .crew-b__name {
         @include crew__name;
+        @include for-tablet-crew__name;
     }
 
     .crew-b__description {
         @include crew__description;
+        @include for-tablet-crew__description;
     }
 }
