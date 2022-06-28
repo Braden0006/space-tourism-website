@@ -2,13 +2,17 @@
 
 .moon {
     @include planet;
+    @include for-tablet__planet;
+
 
     .moon__title {
         @include planet__title;
+        @include for-tablet__planet__title;
     }
 
     .moon__description {
         @include planet__description;
+        @include for-tablet__planet__description;
     }
 
     .moon__line {
@@ -16,7 +20,7 @@
     }
 
     .moon__travel {
-
+        @include for-tabler__planet__travel;
 
         .moon__travel__distance {
             @include planet__travel__distance;

@@ -50,18 +50,51 @@
                 border: none;
                 color: $light-blue;
                 display: flex;
-                margin: 0rem 1rem;
+                margin: 0rem 2rem;
                 justify-content: center;
                 width: 3rem;
                 font-size: $fourteen;
                 font-family: $barlow-condensed;
                 padding-bottom: 1rem;
+                letter-spacing: $letter-spacing;
             }
         }
 
         .main__carousel__inner {
             white-space: nowrap;
             transition: transform 0.3s;
+        }
+    }
+}
+
+// Media Query
+@media screen and (min-width: 768px) {
+    .main {
+        background: url('../Background-img/Destination/background-destination-tablet.jpg');
+
+        .main__carousel {
+
+            .main__carousel__destination {
+                display: flex;
+                padding-left: 6rem;
+                font-size: $twenty;
+                margin-top: 6rem;
+            }
+
+            .main__carousel__img {
+                margin-top: 8rem;
+
+                .main__carousel__img-image {
+                    height: 30rem;
+                }
+            }
+
+            .main__carousel__buttons {
+
+                .main__carousel__buttons-button {
+                    font-size: $sixteen;
+                }
+            }
         }
     }
 }

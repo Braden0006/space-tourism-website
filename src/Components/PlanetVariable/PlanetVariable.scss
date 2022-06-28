@@ -65,3 +65,30 @@
     font-family: $bellefair;
     color: $white;
 }
+
+// Media Query
+@mixin for-tablet__planet {
+    @media screen and (min-width: 768px) {
+        width: 70%;
+    }
+}
+
+@mixin for-tablet__planet__title {
+    @media screen and (min-width: 768px) {
+        font-size: $eighty;
+    }
+}
+
+@mixin for-tablet__planet__description {
+    @media screen and (min-width: 768px) {
+        font-size: $sixteen;
+    }
+}
+
+@mixin for-tabler__planet__travel {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-top: 3rem;
+    }
+}
+
