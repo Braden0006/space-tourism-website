@@ -54,6 +54,7 @@
         border-radius: 50%;
         border: none;
         margin-left: $sixteen;
+        font-family: $bellefair;
       }
     }
 
@@ -62,6 +63,40 @@
       font-size: $fourteen;
       font-family: $barlow-condensed;
       letter-spacing: $letter-spacing;
+    }
+  }
+}
+
+// Media Query
+@media screen and (min-width: 768px) {
+  .technology-main {
+    background: url('../Background-img/Technology/background-technology-tablet.jpg');
+
+    .technology-main__carousel {
+
+      .technology-main__carousel__title {
+        width: 90vw;
+        font-size: $twenty;
+      }
+      
+      .technology-main__carousel__img {
+
+        .technology-main__carousel__img-image {
+          height: 31.1rem;
+        }
+      }
+
+      .technology-main__carousel__buttons {
+
+        .technology-main__carousel__buttons-button {
+          font-size: $twenty-four;
+          padding: 1.4rem 2.2rem;
+        }
+      }
+
+      .technology-main__carousel__terminology {
+        font-size: $sixteen;
+      }
     }
   }
 }

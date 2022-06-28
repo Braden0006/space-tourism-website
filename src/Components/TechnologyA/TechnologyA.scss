@@ -5,9 +5,11 @@
 
     .tech-a__title {
         @include tech__title;
+        @include for-tablet-tech__title;
     }
 
     .tech-a__info {
         @include tech__info;
+        @include for-tablet-tech__info;
     }
 }
