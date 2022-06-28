@@ -2,13 +2,16 @@
 
 .titan {
     @include planet;
+    @include for-tablet__planet;
 
     .titan__title {
         @include planet__title;
+        @include for-tablet__planet__title;
     }
 
     .titan__description {
         @include planet__description;
+        @include for-tablet__planet__description;
     }
 
     .titan__line {
@@ -16,7 +19,7 @@
     }
 
     .titan__travel {
-
+        @include for-tablet__planet__travel;
 
         .titan__travel__distance {
             @include planet__travel__distance;
