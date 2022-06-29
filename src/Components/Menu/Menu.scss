@@ -81,3 +81,23 @@
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+  .menu-container {
+    
+    .menu {
+
+      .menu__list {
+        width: 58vw;
+
+        .menu__list-item {
+
+          .menu__list-item-number {
+            display: inline-block;
+            padding-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

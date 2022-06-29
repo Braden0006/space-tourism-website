@@ -1,3 +1,5 @@
+@import '../Variables/Variables.scss';
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -20,6 +22,25 @@
 
         .navbar__hamburger {
             display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .navbar {
+        padding: 4rem 0rem;
+
+        .navbar__menu-container {
+            display: flex;
+            align-items: center;
+
+            .navbar__menu__line {
+                width: 50rem;
+                border: 1px solid $lighter-white;
+                z-index: 1;
+                right: 80rem;
+                position: fixed;
+            }
         }
     }
 }
