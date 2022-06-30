@@ -3,16 +3,19 @@
 .moon {
     @include planet;
     @include for-tablet__planet;
+    @include for-desktop__planet;
 
 
     .moon__title {
         @include planet__title;
         @include for-tablet__planet__title;
+        @include for-desktop__planet__title;
     }
 
     .moon__description {
         @include planet__description;
         @include for-tablet__planet__description;
+        @include for-desktop__planet__description;
     }
 
     .moon__line {
@@ -21,16 +24,20 @@
 
     .moon__travel {
         @include for-tablet__planet__travel;
+        @include for-desktop__planet__travel;
 
         .moon__travel__distance {
             @include planet__travel__distance;
+            @include for-desktop__planet__travel__distance;
     
             .moon__travel__distance__heading {
                 @include planet__travel__distance__heading;
+                @include for-desktop__planet__travel__distance__heading;
             }
     
             .moon__travel__distance__number {
                 @include planet__travel__distance__number;
+                @include for-desktop__planet__travel__distance__number;
             }
         }
 
@@ -39,10 +46,12 @@
 
             .moon__travel__time__heading {
                 @include planet__travel__time__heading;
+                @include for-desktop__planet__travel__time__heading;
             }
 
             .moon__travel__time__number {
                 @include planet__travel__time__number;
+                @include for-desktop__planet__travel__time__number;
             }
         }
     }

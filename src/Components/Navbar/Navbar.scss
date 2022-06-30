@@ -1,46 +1,46 @@
-@import '../Variables/Variables.scss';
+@import "../Variables/Variables.scss";
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 2rem 0rem 2rem;
-    align-items: center;
-    position: fixed;
-    width: 100vw;
-    z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem 0rem 2rem;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+
+  .navbar__line {
+    display: none;
+  }
 }
 
 // Media Query
 @media screen and (min-width: 768px) {
-    .navbar {
-        padding: 0rem;
+  .navbar {
+    padding: 0rem;
 
-        .navbar__logo {
-            width: 8rem;
-            padding-left: 3rem;
-        }
-
-        .navbar__hamburger {
-            display: none;
-        }
+    .navbar__logo {
+      width: 8rem;
+      padding-left: 3rem;
     }
+
+    .navbar__hamburger {
+      display: none;
+    }
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .navbar {
-        padding: 4rem 0rem;
+  .navbar {
+    padding: 4rem 0rem;
 
-        .navbar__menu-container {
-            display: flex;
-            align-items: center;
-
-            .navbar__menu__line {
-                width: 50rem;
-                border: 1px solid $lighter-white;
-                z-index: 1;
-                right: 80rem;
-                position: fixed;
-            }
-        }
+    .navbar__line {
+      display: inline-block;
+      width: 50rem;
+      border: 1px solid $lighter-white;
+      z-index: 1;
+      right: 80rem;
+      position: fixed;
     }
+  }
 }

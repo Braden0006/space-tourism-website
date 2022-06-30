@@ -1,101 +1,160 @@
-@import '../Variables/Variables.scss';
+@import "../Variables/Variables.scss";
 
 .main {
-    background: url('../Background-img/Destination/background-destination-mobile.jpg');
-    background-size: cover;
-    height: 100vh;
+  background: url("../Background-img/Destination/background-destination-mobile.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .main__carousel {
+    overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
     flex-direction: column;
+    justify-content: center;
 
-    
-    .main__carousel {
-        overflow: hidden;
-        display: flex;
-        height: 100vh;
-        flex-direction: column;
-        justify-content: center;
+    .main__carousel__destination {
+      color: white;
+      font-size: $sixteen;
+      text-align: center;
+      font-family: $barlow-condensed;
+      letter-spacing: $letter-spacing;
 
-        .main__carousel__destination {
-            color: white;
-            font-size: $sixteen;
-            text-align: center;
-            font-family: $barlow-condensed;
-            letter-spacing: $letter-spacing;
-    
-            .main__carousel__destination__number {
-                margin-right: 1rem;
-                color: $dark-grey;
-            }
-        }
-    
-        .main__carousel__img {
-            display: flex;
-            justify-content: center;
-            margin: 2rem 0rem;
-
-            .main__carousel__img-image {
-                height: 22.3rem;
-            }
-        }
-
-        .main__carousel__buttons {
-            display: flex;
-            margin: 2rem 0rem;
-            justify-content: center;
-            
-            .main__carousel__buttons-button {
-                background-color: transparent;
-                border: none;
-                color: $light-blue;
-                display: flex;
-                margin: 0rem 2rem;
-                justify-content: center;
-                width: 3rem;
-                font-size: $fourteen;
-                font-family: $barlow-condensed;
-                padding-bottom: 1rem;
-                letter-spacing: $letter-spacing;
-            }
-        }
-
-        .main__carousel__inner {
-            white-space: nowrap;
-            transition: transform 0.3s;
-        }
+      .main__carousel__destination__number {
+        margin-right: 1rem;
+        color: $dark-grey;
+      }
     }
+
+    .main__carousel__img {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0rem;
+
+      .main__carousel__img-image {
+        height: 22.3rem;
+      }
+    }
+
+    .main__carousel__buttons {
+      display: flex;
+      margin: 2rem 0rem;
+      justify-content: center;
+
+      .main__carousel__buttons-button {
+        background-color: transparent;
+        border: none;
+        color: $light-blue;
+        display: flex;
+        margin: 0rem 2rem;
+        justify-content: center;
+        width: 3rem;
+        font-size: $fourteen;
+        font-family: $barlow-condensed;
+        padding-bottom: 1rem;
+        letter-spacing: $letter-spacing;
+      }
+    }
+
+    .main__carousel__inner {
+      white-space: nowrap;
+      transition: transform 0.3s;
+    }
+  }
+}
+
+.hidden {
+  display: none;
 }
 
 // Media Query
 @media screen and (min-width: 768px) {
-    .main {
-        background: url('../Background-img/Destination/background-destination-tablet.jpg');
+  .main {
+    background: url("../Background-img/Destination/background-destination-tablet.jpg");
+    background-size: cover;
 
-        .main__carousel {
-            align-items: center;
+    .main__carousel {
+      align-items: center;
 
-            .main__carousel__destination {
-                display: flex;
-                width: 90vw;
-                font-size: $twenty;
-                margin-top: 8rem;
-            }
+      .main__carousel__destination {
+        display: flex;
+        width: 90vw;
+        font-size: $twenty;
+        margin-top: 8rem;
+      }
 
-            .main__carousel__img {
-                margin-top: 10rem;
+      .main__carousel__img {
+        margin-top: 10rem;
 
-                .main__carousel__img-image {
-                    height: 30rem;
-                }
-            }
-
-            .main__carousel__buttons {
-
-                .main__carousel__buttons-button {
-                    font-size: $sixteen;
-                }
-            }
+        .main__carousel__img-image {
+          height: 30rem;
         }
+      }
+
+      .main__carousel__buttons {
+        .main__carousel__buttons-button {
+          font-size: $sixteen;
+        }
+      }
     }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    background: url('../Background-img/Destination/background-destination-desktop.jpg');
+    background-size: cover;
+
+    .main__carousel {
+      flex-direction: row;
+
+      .main__carousel__destination-container {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        height: 45vh;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        left: 10rem;
+        bottom: 16rem;
+
+        .main__carousel__destination {
+          width: 90%;
+          margin-top: 0rem;
+          font-size: $twenty-eight;
+        }
+      }
+
+      .main__carousel__img {
+        
+        .main__carousel__img-image {
+          height: 44.5rem;
+        }
+      }
+
+      .main__carousel__buttons-container {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        position: fixed;
+        right: 20rem;
+        bottom: 18rem;
+        justify-content: center;
+        align-items: flex-end;
+
+        .main__carousel__buttons {
+          width: 28%;
+          justify-content: flex-start;
+
+          .main__carousel__buttons-button {
+            margin: 0rem 4rem 0rem 0.8rem;
+          }
+        }
+      }
+    }
+  }
 }

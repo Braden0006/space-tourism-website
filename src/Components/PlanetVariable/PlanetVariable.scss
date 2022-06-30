@@ -66,7 +66,7 @@
     color: $white;
 }
 
-// Media Query
+// Media Query Tablet
 @mixin for-tablet__planet {
     @media screen and (min-width: 768px) {
         width: 55%;
@@ -94,3 +94,57 @@
     }
 }
 
+// Media Query Desktop
+@mixin for-desktop__planet {
+    @media screen and (min-width: 1440px) {
+        width: 28%;
+        align-items: flex-start;
+    }
+}
+
+@mixin for-desktop__planet__title {
+    @media screen and (min-width: 1440px) {
+        font-size: $onehundered;
+    }
+}
+
+@mixin for-desktop__planet__description {
+    @media screen and (min-width: 1440px) {
+        text-align: start;
+        font-size: $eighteen;
+    }
+}
+
+@mixin for-desktop__planet__travel {
+    @media screen and (min-width: 1440px) {
+        justify-content: flex-start;
+    }
+}
+
+@mixin for-desktop__planet__travel__distance {
+    @media screen and (min-width: 1440px) {
+        margin-right: 6rem;
+    }
+}
+
+@mixin for-desktop__planet__travel__distance__heading {
+    @media screen and (min-width: 1440px) {
+        display: flex;
+    }
+}
+
+@mixin for-desktop__planet__travel__distance__number {
+    @media screen and (min-width: 1440px) {
+        width: 18rem;
+        display: flex;
+    }
+}
+
+@mixin for-desktop__planet__travel__time__heading {
+    display: flex;
+}
+
+@mixin for-desktop__planet__travel__time__number {
+    width: 18rem;
+    display: flex;
+}

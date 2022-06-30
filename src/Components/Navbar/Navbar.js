@@ -45,10 +45,9 @@ export default function Navbar() {
             <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
           </g>
         </motion.svg>
-        <div className="navbar__menu-container">
-          <span className="navbar__menu__line"></span>
-          <Menu open={isOpen} toggle={toggleMenu} />
-        </div>
+
+        <span className="navbar__line"></span>
+        <Menu open={isOpen} toggle={toggleMenu} />
       </nav>
     </>
   );

@@ -4,3 +4,14 @@
     align-items: center;
     white-space: break-spaces;
 }
+
+.hidden {
+    display: none;
+}
+
+// Media Query 
+@media screen and (min-width: 1440px) {
+    .carousel-item {
+        justify-content: flex-end;
+    }
+}

@@ -34,7 +34,7 @@ function App() {
           path="/destinations"
           element={
             <Carousel>
-              <CarouselItem>
+              <CarouselItem activeIndex>
                 <MoonDestination />
               </CarouselItem>
 
