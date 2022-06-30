@@ -3,15 +3,18 @@
 .titan {
     @include planet;
     @include for-tablet__planet;
+    @include for-desktop__planet;
 
     .titan__title {
         @include planet__title;
         @include for-tablet__planet__title;
+        @include for-desktop__planet__title;
     }
 
     .titan__description {
         @include planet__description;
         @include for-tablet__planet__description;
+        @include for-desktop__planet__description;
     }
 
     .titan__line {
@@ -20,16 +23,20 @@
 
     .titan__travel {
         @include for-tablet__planet__travel;
+        @include for-desktop__planet__travel;
 
         .titan__travel__distance {
             @include planet__travel__distance;
+            @include for-desktop__planet__travel__distance;
     
             .titan__travel__distance__heading {
                 @include planet__travel__distance__heading;
+                @include for-desktop__planet__travel__distance__heading;
             }
     
             .titan__travel__distance__number {
                 @include planet__travel__distance__number;
+                @include for-desktop__planet__travel__distance__number;
             }
         }
 
@@ -38,10 +45,12 @@
 
             .titan__travel__time__heading {
                 @include planet__travel__time__heading;
+                @include for-desktop__planet__travel__time__heading;
             }
 
             .titan__travel__time__number {
                 @include planet__travel__time__number;
+                @include for-desktop__planet__travel__time__number;
             }
         }
     }
