@@ -3,15 +3,18 @@
 .europa {
     @include planet;
     @include for-tablet__planet;
+    @include for-desktop__planet;
 
     .europa__title {
         @include planet__title;
         @include for-tablet__planet__title;
+        @include for-desktop__planet__title;
     }
 
     .europa__description {
         @include planet__description;
         @include for-tablet__planet__description;
+        @include for-desktop__planet__description;
     }
 
     .europa__line {
@@ -20,16 +23,20 @@
 
     .europa__travel {
         @include for-tablet__planet__travel;
+        @include for-desktop__planet__travel;
 
         .europa__travel__distance {
             @include planet__travel__distance;
+            @include for-desktop__planet__travel__distance;
     
             .europa__travel__distance__heading {
                 @include planet__travel__distance__heading;
+                @include for-desktop__planet__travel__distance__heading;
             }
     
             .europa__travel__distance__number {
                 @include planet__travel__distance__number;
+                @include for-desktop__planet__travel__distance__number;
             }
         }
 
@@ -38,10 +45,12 @@
 
             .europa__travel__time__heading {
                 @include planet__travel__time__heading;
+                @include for-desktop__planet__travel__time__heading;
             }
 
             .europa__travel__time__number {
                 @include planet__travel__time__number;
+                @include for-desktop__planet__travel__time__number;
             }
         }
     }
