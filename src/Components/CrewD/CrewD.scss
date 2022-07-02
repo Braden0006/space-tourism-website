@@ -3,19 +3,23 @@
 .crew-d {
     @include crew;
     @include for-tablet-crew;
+    @include for-desktop-crew;
 
     .crew-d__position {
         @include crew__position;
         @include for-tablet-crew__position;
+        @include for-desktop-crew__position;
     }
 
     .crew-d__name {
         @include crew__name;
         @include for-tablet-crew__name;
+        @include for-desktop-crew__name;
     }
 
     .crew-d__description {
         @include crew__description;
         @include for-tablet-crew-b__description;
+        @include for-desktop-crew__description;
     }
 }

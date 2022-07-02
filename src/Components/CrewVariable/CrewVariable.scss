@@ -74,18 +74,21 @@
 @mixin for-desktop-crew {
   @media screen and (min-width: 1440px) {
     align-items: flex-start;
+    width: 100vw;
   }
 }
 
 @mixin for-desktop-crew__position {
   @media screen and (min-width: 1440px) {
     font-size: $thirtytwo;
+    padding-left: 15rem;
   }
 }
 
 @mixin for-desktop-crew__name {
   @media screen and (min-width: 1440px) {
     font-size: $fifty-six;
+    padding-left: 15rem;
   }
 }
 
@@ -94,5 +97,6 @@
     width: 44.4rem;
     text-align: start;
     font-size: $eighteen;
+    margin-left: 15rem;
   }
 }
