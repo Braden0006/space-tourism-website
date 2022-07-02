@@ -69,3 +69,30 @@
     font-size: $sixteen;
   }
 }
+
+// Media Query for Desktop
+@mixin for-desktop-crew {
+  @media screen and (min-width: 1440px) {
+    align-items: flex-start;
+  }
+}
+
+@mixin for-desktop-crew__position {
+  @media screen and (min-width: 1440px) {
+    font-size: $thirtytwo;
+  }
+}
+
+@mixin for-desktop-crew__name {
+  @media screen and (min-width: 1440px) {
+    font-size: $fifty-six;
+  }
+}
+
+@mixin for-desktop-crew__description {
+  @media screen and (min-width: 1440px) {
+    width: 44.4rem;
+    text-align: start;
+    font-size: $eighteen;
+  }
+}

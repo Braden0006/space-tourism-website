@@ -1,1 +1,1 @@
-.carousel-item{display:inline-flex;justify-content:center;align-items:center;white-space:break-spaces}.hidden{display:none}@media screen and (min-width: 1440px){.carousel-item{justify-content:flex-end}}/*# sourceMappingURL=CarouselItem.css.map */
+.carousel-item{display:inline-flex;justify-content:center;align-items:center;white-space:break-spaces}.hidden{display:none}@media screen and (min-width: 1440px){.carousel-item{justify-content:flex-end;width:auto !important}}/*# sourceMappingURL=CarouselItem.css.map */

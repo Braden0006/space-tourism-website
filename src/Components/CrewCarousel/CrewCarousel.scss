@@ -1,101 +1,148 @@
-@import '../Variables/Variables.scss';
+@import "../Variables/Variables.scss";
 
 .crew-main {
-    background: url('../Background-img/Crew/background-crew-mobile.jpg');
-    background-size: cover;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+  background: url("../Background-img/Crew/background-crew-mobile.jpg");
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 
-    .crew-main__carousel {
-        overflow: hidden;
+  .crew-main__carousel {
+    overflow: hidden;
 
-        .crew-main__carousel__title {
-            color: $white;
-            text-align: center;
-            font-size: $sixteen;
-            font-family: $barlow-condensed;
-            letter-spacing: $letter-spacing;
+    .crew-main__carousel__title {
+      color: $white;
+      text-align: center;
+      font-size: $sixteen;
+      font-family: $barlow-condensed;
+      letter-spacing: $letter-spacing;
 
-            .crew-main__carousel__title-number {
-                padding-right: 0.8rem;
-                color: $dark-grey;
-            }
-        }
-
-        .crew-main__carousel__img {
-            display: flex;
-            justify-content: center;
-            margin: 3rem 0rem;
-
-            .crew-main__carousel__img-container {
-                text-align: center;
-                margin: 0;
-
-                .crew-main__carousel__img-container-image {
-                    height: 22.3rem;
-                }
-            }
-
-            .crew-main__carousel__img-line {
-                width: 90vw;
-                border: 1px solid $dark-grey;
-            }
-        }
-
-        .crew-main__carousel__inner {
-            white-space: nowrap;
-            transition: transform 0.3s;
-        }
-
-        .crew-main__carousel__buttons {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 3rem;
-            
-            .crew-main__carousel__buttons-button {
-                border: none;
-                border-radius: 50%;
-                height: 1.2rem;
-                margin: 0rem 0.8rem;
-            }
-        }
+      .crew-main__carousel__title-number {
+        padding-right: 0.8rem;
+        color: $dark-grey;
+      }
     }
+
+    .crew-main__carousel__img {
+      display: flex;
+      justify-content: center;
+      margin: 3rem 0rem;
+
+      .crew-main__carousel__img-container {
+        text-align: center;
+        margin: 0;
+
+        .crew-main__carousel__img-container-image {
+          height: 22.3rem;
+        }
+      }
+
+      .crew-main__carousel__img-line {
+        width: 90vw;
+        border: 1px solid $dark-grey;
+      }
+    }
+
+    .crew-main__carousel__inner {
+      white-space: nowrap;
+      transition: transform 0.3s;
+    }
+
+    .crew-main__carousel__buttons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3rem;
+
+      .crew-main__carousel__buttons-button {
+        border: none;
+        border-radius: 50%;
+        height: 1.2rem;
+        margin: 0rem 0.8rem;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .crew-main {
-        background: url('../Background-img/Crew/background-crew-tablet.jpg');
+  .crew-main {
+    background: url("../Background-img/Crew/background-crew-tablet.jpg");
 
-        .crew-main__carousel {
+    .crew-main__carousel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      justify-content: flex-end;
+
+      .crew-main__carousel__title {
+        display: flex;
+        width: 90vw;
+        font-size: $twenty;
+        margin-bottom: 4rem;
+      }
+
+      .crew-main__carousel__img {
+        margin-bottom: 0rem;
+
+        .crew-main__carousel__img-container {
+          .crew-main__carousel__img-container-image {
+            height: 50rem;
+          }
+        }
+
+        .crew-main__carousel__img-line {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .crew-main {
+    background: url("../Background-img/Crew/background-crew-desktop.jpg");
+    background-size: cover;
+
+    .crew-main__carousel {
+      flex-direction: row;
+
+      .crew-main__carousel__title {
+        font-size: $twenty-eight;
+        position: fixed;
+        top: 20rem;
+        left: 15rem;
+      }
+
+      .crew-main__carousel-container {
+        position: fixed;
+        right: 0;
+        bottom: 14rem;
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+
+        .crew-main__carousel__inner-container {
             display: flex;
+            width: 79vw;
             flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            justify-content: flex-end;
+            align-items: flex-start;
+            justify-content: space-around;
+            height: 50vh;
+        }
+      }
 
-            .crew-main__carousel__title {
-                display: flex;
-                width: 90vw;
-                font-size: $twenty;
-                margin-bottom: 4rem;
-            }
+      .crew-main__carousel__img {
+        position: fixed;
+        right: 15rem;
+        bottom: 0;
 
-            .crew-main__carousel__img {
-                margin-bottom: 0rem;
-
-                .crew-main__carousel__img-container {
-                    
-                    .crew-main__carousel__img-container-image {
-                        height: 50rem;
-                    }
-                }
-
-                .crew-main__carousel__img-line {
-                    display: none;
-                }
+        .crew-main__carousel__img-container {
+            .crew-main__carousel__img-container-image {
+                height: 71.2rem;
             }
         }
+      }
     }
+  }
 }

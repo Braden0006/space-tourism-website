@@ -141,10 +141,14 @@
 }
 
 @mixin for-desktop__planet__travel__time__heading {
-    display: flex;
+    @media screen and (min-width: 1440px) {
+        display: flex;
+    }
 }
 
 @mixin for-desktop__planet__travel__time__number {
-    width: 18rem;
-    display: flex;
+    @media screen and (min-width: 1440px) {
+        width: 18rem;
+        display: flex;
+    }
 }

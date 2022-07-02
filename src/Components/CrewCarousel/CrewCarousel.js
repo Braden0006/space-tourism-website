@@ -36,12 +36,12 @@ export default function CrewCarousel({ children }) {
   return (
     <main className="crew-main">
       <div className="crew-main__carousel">
-        <h5 className="crew-main__carousel__title">
-          <span className="crew-main__carousel__title-number">02</span> MEET
-          YOUR CREW
-        </h5>
-
         <MediaQuery maxWidth={767}>
+          <h5 className="crew-main__carousel__title">
+            <span className="crew-main__carousel__title-number">02</span> MEET
+            YOUR CREW
+          </h5>
+
           <div className="crew-main__carousel__img">
             <div className="crew-main__carousel__img-container">
               <img
@@ -94,7 +94,7 @@ export default function CrewCarousel({ children }) {
           </div>
         </MediaQuery>
 
-        <MediaQuery minWidth={768}>
+        <MediaQuery maxWidth={1023}>
           <div
             className="crew-main__carousel__inner"
             style={{ transform: `translateX(-${crewActiveIndex * 100}%)` }}
@@ -147,6 +147,68 @@ export default function CrewCarousel({ children }) {
               <div className="crew-main__carousel__img-line"></div>
             </div>
           </div>
+        </MediaQuery>
+        <MediaQuery minWidth={1024}>
+          {/* <div className="crew-main__carousel-container"> */}
+          <div className="crew-main__carousel-container">
+            <h5 className="crew-main__carousel__title">
+              <span className="crew-main__carousel__title-number">02</span> MEET
+              YOUR CREW
+            </h5>
+            <div className="crew-main__carousel__inner-container">
+              <div
+                className="crew-main__carousel__inner"
+                style={{ transform: `translateX(-${crewActiveIndex * 100}%)` }}
+              >
+                {React.Children.map(children, (child, index) => {
+                  return React.cloneElement(child, { width: "100%" });
+                })}
+              </div>
+              <div className="crew-main__carousel__buttons">
+                {React.Children.map(children, (child, index) => {
+                  return (
+                    <button
+                      className="crew-main__carousel__buttons-button"
+                      onClick={() => {
+                        updateIndex(index);
+                      }}
+                    >
+                      {crew.map((crew) => {
+                        for (const [key, value] of Object.entries(crew)) {
+                          if (value === index) {
+                            return `${key}`;
+                          }
+                        }
+                        return null;
+                      })}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+          <div className="crew-main__carousel__img">
+            <div className="crew-main__carousel__img-container">
+              <img
+                className="crew-main__carousel__img-container-image"
+                src={images
+                  .map((image) => {
+                    if (image.id === crewActiveIndex) {
+                      return image.image;
+                    } else {
+                      return null;
+                    }
+                  })
+                  .join("")}
+                key={images.map((image) => {
+                  return image.id;
+                })}
+                alt=""
+              />
+              <div className="crew-main__carousel__img-line"></div>
+            </div>
+          </div>
+          {/* </div> */}
         </MediaQuery>
       </div>
     </main>
