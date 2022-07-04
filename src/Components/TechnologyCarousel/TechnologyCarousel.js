@@ -5,6 +5,10 @@ import launch from "../Images/TechnologyImg/image-launch-vehicle-landscape.jpg";
 import spaceport from "../Images/TechnologyImg/image-spaceport-landscape.jpg";
 import space from "../Images/TechnologyImg/image-space-capsule-landscape.jpg";
 
+import laptopLaunch from "../Images/TechnologyImg/image-launch-vehicle-portrait.jpg";
+import laptopSpaceport from "../Images/TechnologyImg/image-spaceport-portrait.jpg";
+import laptopSpace from "../Images/TechnologyImg/image-space-capsule-portrait.jpg";
+
 import "./TechnologyCarousel.css";
 
 export default function TechnologyCarousel({ children }) {
@@ -28,6 +32,13 @@ export default function TechnologyCarousel({ children }) {
     { id: 2, image: space },
   ];
 
+  // An array of objects of images to display for laptops and larger
+  const laptopImages = [
+    { id: 0, image: laptopLaunch },
+    { id: 1, image: laptopSpaceport },
+    { id: 2, image: laptopSpace },
+  ];
+
   const indexNumber = [{ 0: 1 }, { 1: 2 }, { 2: 3 }];
 
   return (
@@ -41,14 +52,16 @@ export default function TechnologyCarousel({ children }) {
           <div className="technology-main__carousel__img">
             <img
               className="technology-main__carousel__img-image"
-              src={images
+              src={
+                images
                 .map((image) => {
                   if (image.id === technologyActiveIndex) {
                     return image.image;
                   }
                   return null;
                 })
-                .join(" ")}
+                .join(" ")
+              }
               alt="Images of the technology used"
             />
           </div>
@@ -132,7 +145,7 @@ export default function TechnologyCarousel({ children }) {
           <div className="technology-main__carousel__img">
             <img
               className="technology-main__carousel__img-image"
-              src={images
+              src={laptopImages
                 .map((image) => {
                   if (image.id === technologyActiveIndex) {
                     return image.image;
