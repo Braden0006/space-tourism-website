@@ -39,13 +39,13 @@
 
 // Media Query for Desktop
 @mixin for-desktop-tech {
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1440px) {
         width: 100vw;
     }
 }
 
 @mixin for-desktop-tech__title {
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1440px) {
         position: relative;
         width: 47rem;
         left: -20rem;
@@ -55,7 +55,7 @@
 }
 
 @mixin for-desktop-tech__info {
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1440px) {
         text-align: start;
         font-size: 1.8rem;
         position: relative;

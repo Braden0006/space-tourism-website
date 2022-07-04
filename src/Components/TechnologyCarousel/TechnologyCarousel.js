@@ -33,7 +33,7 @@ export default function TechnologyCarousel({ children }) {
   return (
     <main className="technology-main">
       <div className="technology-main__carousel">
-        <MediaQuery maxWidth={1023}>
+        <MediaQuery maxWidth={1439}>
           <h5 className="technology-main__carousel__title">
             <span className="technology-main__carousel__title-number">03</span>
             SPACE LAUNCH 101
@@ -86,7 +86,7 @@ export default function TechnologyCarousel({ children }) {
           </div>
         </MediaQuery>
 
-        <MediaQuery minWidth={1024}>
+        <MediaQuery minWidth={1440}>
           <h5 className="technology-main__carousel__title">
             <span className="technology-main__carousel__title-number">03</span>
             SPACE LAUNCH 101
