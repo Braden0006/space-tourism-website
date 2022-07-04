@@ -47,6 +47,7 @@
 @mixin for-desktop-tech__title {
     @media screen and (min-width: 1024px) {
         position: relative;
+        width: 47rem;
         left: -20rem;
         bottom: 0;
         font-size: $fifty-six;

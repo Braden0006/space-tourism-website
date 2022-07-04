@@ -2,14 +2,17 @@
 
 .tech-b {
     @include tech;
+    @include for-desktop-tech;
 
     .tech-b__title {
         @include tech__title;
         @include for-tablet-tech__title;
+        @include for-desktop-tech__title;
     }
 
     .tech-b__info {
         @include tech__info;
         @include for-tablet-tech__info;
+        @include for-desktop-tech__info;
     }
 }
