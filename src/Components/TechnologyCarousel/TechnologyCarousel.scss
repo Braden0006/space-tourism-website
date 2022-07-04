@@ -101,3 +101,79 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .technology-main {
+    background: url('../Background-img/Technology/background-technology-desktop.jpg');
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .technology-main {
+
+    .technology-main__carousel {
+      flex-direction: row;
+
+      .technology-main__carousel__title {
+        position: fixed;
+        top: 20rem;
+        left: 15rem;
+        font-size: $twenty-eight;
+      }
+
+      .technology-main__carousel__inner {
+        width: 100vw;
+      }
+
+      .technology-main__carousel__buttons-container {
+        display: flex;
+        height: 52vh;
+        align-items: flex-end;
+
+
+        .technology-main__carousel__buttons {
+          flex-direction: column;
+          width: auto;
+          height: 30rem;
+          z-index: 10;
+          margin-bottom: 0;
+          justify-content: space-evenly;
+          position: fixed;
+          left: 15rem;
+
+          .technology-main__carousel__buttons-button {
+            margin: 0;
+            padding: 2.2rem 3.2rem;
+            margin-top: 3rem;
+            font-size: $thirtytwo;
+          }
+        }
+      }
+
+      .technology-main__carousel__terminology-container {
+        position: fixed;
+        display: flex;
+        z-index: 1;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .technology-main__carousel__terminology {
+          position: relative;
+          left: 28rem;
+        }
+      }
+
+      .technology-main__carousel__img {
+        position: fixed;
+        right: 0;
+        bottom: 6rem;
+
+        .technology-main__carousel__img-image {
+          height: 52.7rem;
+          width: 51.5rem;
+        }
+      }
+    }
+  }
+}

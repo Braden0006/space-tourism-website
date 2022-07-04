@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import MediaQuery from "react-responsive";
 
 import launch from "../Images/TechnologyImg/image-launch-vehicle-landscape.jpg";
 import spaceport from "../Images/TechnologyImg/image-spaceport-landscape.jpg";
@@ -32,60 +33,117 @@ export default function TechnologyCarousel({ children }) {
   return (
     <main className="technology-main">
       <div className="technology-main__carousel">
-        <h5 className="technology-main__carousel__title">
-          <span className="technology-main__carousel__title-number">03</span>
-          SPACE LAUNCH 101
-        </h5>
-
-        {/* <div className="technology-main__carousel__img-container"> */}
-        <div className="technology-main__carousel__img">
-          <img
-            className="technology-main__carousel__img-image"
-            src={images
-              .map((image) => {
-                if (image.id === technologyActiveIndex) {
-                  return image.image;
-                }
-                return null;
-              })
-              .join(" ")}
-            alt="Images of the technology used"
-          />
-        </div>
-        {/* </div> */}
-
-        <div className="technology-main__carousel__buttons">
-          {React.Children.map(children, (child, index) => {
-            return (
-              <button
-                className="technology-main__carousel__buttons-button"
-                onClick={() => updateIndex(index)}
-              >
-                {indexNumber.map((item) => {
-                  for (const [key, value] of Object.entries(item)) {
-                    if (parseInt(key) === index) {
-                      return `${value}`;
-                    }
+        <MediaQuery maxWidth={1023}>
+          <h5 className="technology-main__carousel__title">
+            <span className="technology-main__carousel__title-number">03</span>
+            SPACE LAUNCH 101
+          </h5>
+          <div className="technology-main__carousel__img">
+            <img
+              className="technology-main__carousel__img-image"
+              src={images
+                .map((image) => {
+                  if (image.id === technologyActiveIndex) {
+                    return image.image;
                   }
                   return null;
+                })
+                .join(" ")}
+              alt="Images of the technology used"
+            />
+          </div>
+          <div className="technology-main__carousel__buttons">
+            {React.Children.map(children, (child, index) => {
+              return (
+                <button
+                  className="technology-main__carousel__buttons-button"
+                  onClick={() => updateIndex(index)}
+                >
+                  {indexNumber.map((item) => {
+                    for (const [key, value] of Object.entries(item)) {
+                      if (parseInt(key) === index) {
+                        return `${value}`;
+                      }
+                    }
+                    return null;
+                  })}
+                </button>
+              );
+            })}
+          </div>
+          <span className="technology-main__carousel__terminology">
+            THE TERMINOLOGY...
+          </span>
+          <div
+            className="technology-main__carousel__inner"
+            style={{
+              transform: `translateX(-${technologyActiveIndex * 100}%)`,
+            }}
+          >
+            {React.Children.map(children, (child, index) => {
+              return React.cloneElement(child, { width: "100%" });
+            })}
+          </div>
+        </MediaQuery>
+
+        <MediaQuery minWidth={1024}>
+          <h5 className="technology-main__carousel__title">
+            <span className="technology-main__carousel__title-number">03</span>
+            SPACE LAUNCH 101
+          </h5>
+
+          <div className="technology-main__carousel__buttons-container">
+            <div className="technology-main__carousel__buttons">
+              {React.Children.map(children, (child, index) => {
+                return (
+                  <button
+                    className="technology-main__carousel__buttons-button"
+                    onClick={() => updateIndex(index)}
+                  >
+                    {indexNumber.map((item) => {
+                      for (const [key, value] of Object.entries(item)) {
+                        if (parseInt(key) === index) {
+                          return `${value}`;
+                        }
+                      }
+                      return null;
+                    })}
+                  </button>
+                );
+              })}
+            </div>
+            <div className="technology-main__carousel__terminology-container">
+              <span className="technology-main__carousel__terminology">
+                THE TERMINOLOGY...
+              </span>
+              <div
+                className="technology-main__carousel__inner"
+                style={{
+                  transform: `translateX(-${technologyActiveIndex * 100}%)`,
+                }}
+              >
+                {React.Children.map(children, (child, index) => {
+                  return React.cloneElement(child, { width: "100%" });
                 })}
-              </button>
-            );
-          })}
-        </div>
+              </div>
+            </div>
+          </div>
 
-        <span className="technology-main__carousel__terminology">
-          THE TERMINOLOGY...
-        </span>
-
-        <div
-          className="technology-main__carousel__inner"
-          style={{ transform: `translateX(-${technologyActiveIndex * 100}%)` }}
-        >
-          {React.Children.map(children, (child, index) => {
-            return React.cloneElement(child, { width: "100%" });
-          })}
-        </div>
+          <div className="technology-main__carousel__img">
+            <img
+              className="technology-main__carousel__img-image"
+              src={images
+                .map((image) => {
+                  if (image.id === technologyActiveIndex) {
+                    return image.image;
+                  }
+                  return null;
+                })
+                .join(" ")}
+              alt="Images of the technology used"
+            />
+          </div>
+        </MediaQuery>
       </div>
     </main>
   );
