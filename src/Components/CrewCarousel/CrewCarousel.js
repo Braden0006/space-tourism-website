@@ -94,7 +94,7 @@ export default function CrewCarousel({ children }) {
           </div>
         </MediaQuery>
 
-        <MediaQuery maxWidth={1023}>
+        <MediaQuery minWidth={767} maxWidth={1023}>
           <div
             className="crew-main__carousel__inner"
             style={{ transform: `translateX(-${crewActiveIndex * 100}%)` }}

@@ -99,6 +99,13 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .crew-main {
+    background: url('../Background-img/Crew/background-crew-desktop.jpg');
+    background-size: cover;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .crew-main {
     background: url("../Background-img/Crew/background-crew-desktop.jpg");
@@ -133,7 +140,7 @@
 
             .crew-main__carousel__buttons {
               justify-content: flex-start;
-              margin-left: 10rem;
+              margin-left: 15rem;
             }
         }
 
@@ -147,7 +154,7 @@
 
         .crew-main__carousel__img-container {
             .crew-main__carousel__img-container-image {
-                height: 71.2rem;
+                height: 65rem;
             }
         }
       }
