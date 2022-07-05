@@ -52,16 +52,14 @@ export default function TechnologyCarousel({ children }) {
           <div className="technology-main__carousel__img">
             <img
               className="technology-main__carousel__img-image"
-              src={
-                images
+              src={images
                 .map((image) => {
                   if (image.id === technologyActiveIndex) {
                     return image.image;
                   }
                   return null;
                 })
-                .join(" ")
-              }
+                .join(" ")}
               alt="Images of the technology used"
             />
           </div>
@@ -69,7 +67,11 @@ export default function TechnologyCarousel({ children }) {
             {React.Children.map(children, (child, index) => {
               return (
                 <button
-                  className="technology-main__carousel__buttons-button"
+                  className={
+                    technologyActiveIndex === index
+                      ? "technology-main__carousel__buttons-button tech-active"
+                      : "technology-main__carousel__buttons-button"
+                  }
                   onClick={() => updateIndex(index)}
                 >
                   {indexNumber.map((item) => {
@@ -110,7 +112,11 @@ export default function TechnologyCarousel({ children }) {
               {React.Children.map(children, (child, index) => {
                 return (
                   <button
-                    className="technology-main__carousel__buttons-button"
+                    className={
+                      technologyActiveIndex === index
+                        ? "technology-main__carousel__buttons-button tech-active"
+                        : "technology-main__carousel__buttons-button"
+                    }
                     onClick={() => updateIndex(index)}
                   >
                     {indexNumber.map((item) => {

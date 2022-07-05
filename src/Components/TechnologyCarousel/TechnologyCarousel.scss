@@ -55,6 +55,14 @@
         border: none;
         margin-left: $sixteen;
         font-family: $bellefair;
+        background-color: transparent;
+        color: $white;
+        border: 1px solid $little-lighter-white;
+      }
+
+      .technology-main__carousel__buttons-button:hover {
+        border: 1px solid $white;
+        transition: border 0.3s;
       }
     }
 
@@ -65,6 +73,11 @@
       letter-spacing: $letter-spacing;
     }
   }
+}
+
+.tech-active {
+  color: black !important;
+  background: $white !important;
 }
 
 // Media Query
@@ -124,6 +137,7 @@
 
       .technology-main__carousel__inner {
         width: 100vw;
+        transition: none;
       }
 
       .technology-main__carousel__buttons-container {

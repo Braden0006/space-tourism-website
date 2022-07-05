@@ -26,7 +26,7 @@
 
       .menu__list-item {
         font-size: $sixteen;
-        padding: 2rem 0rem;
+        padding: 3.3rem 0rem;
         font-family: $barlow-condensed;
         letter-spacing: $letter-spacing;
 
@@ -77,8 +77,17 @@
                   display: none;
                 }
               }
+
+              .menu__list-item:hover {
+                border-bottom: 3px solid $little-lighter-white;
+              }
             }
         }
+    }
+
+    .menu-active {
+      border-bottom: 3px solid $white !important;
+      transform: border-bottom 0.3s !important;
     }
 }
 

@@ -67,7 +67,11 @@ export default function CrewCarousel({ children }) {
             {React.Children.map(children, (child, index) => {
               return (
                 <button
-                  className="crew-main__carousel__buttons-button"
+                  className={
+                    crewActiveIndex === index
+                      ? "crew-main__carousel__buttons-button crew-active"
+                      : "crew-main__carousel__buttons-button"
+                  }
                   onClick={() => {
                     updateIndex(index);
                   }}
@@ -108,7 +112,11 @@ export default function CrewCarousel({ children }) {
             {React.Children.map(children, (child, index) => {
               return (
                 <button
-                  className="crew-main__carousel__buttons-button"
+                  className={
+                    crewActiveIndex === index
+                      ? "crew-main__carousel__buttons-button crew-active"
+                      : "crew-main__carousel__buttons-button"
+                  }
                   onClick={() => {
                     updateIndex(index);
                   }}
@@ -168,7 +176,11 @@ export default function CrewCarousel({ children }) {
                 {React.Children.map(children, (child, index) => {
                   return (
                     <button
-                      className="crew-main__carousel__buttons-button"
+                      className={
+                        crewActiveIndex === index
+                          ? "crew-main__carousel__buttons-button crew-active"
+                          : "crew-main__carousel__buttons-button"
+                      }
                       onClick={() => {
                         updateIndex(index);
                       }}

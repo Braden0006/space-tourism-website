@@ -64,7 +64,11 @@ export default function Carousel({ children }) {
             {React.Children.map(children, (child, index) => {
               return (
                 <button
-                  className="main__carousel__buttons-button"
+                  className={
+                    activeIndex === index
+                      ? "main__carousel__buttons-button active"
+                      : "main__carousel__buttons-button"
+                  }
                   onClick={() => {
                     updateIndex(index);
                   }}
@@ -120,7 +124,11 @@ export default function Carousel({ children }) {
               {React.Children.map(children, (child, index) => {
                 return (
                   <button
-                    className="main__carousel__buttons-button"
+                    className={
+                      activeIndex === index
+                        ? "main__carousel__buttons-button active"
+                        : "main__carousel__buttons-button"
+                    }
                     onClick={() => {
                       updateIndex(index);
                     }}

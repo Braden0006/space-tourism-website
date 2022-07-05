@@ -56,6 +56,11 @@
         font-family: $barlow-condensed;
         padding-bottom: 1rem;
         letter-spacing: $letter-spacing;
+        cursor: pointer;
+      }
+
+      .main__carousel__buttons-button:hover {
+        border-bottom: 3px solid $lighter-white;
       }
     }
 
@@ -69,6 +74,11 @@
 
 .hidden {
   display: none;
+}
+
+.active {
+  border-bottom: 3px solid $white !important;
+  transition: border-bottom 0.3s;
 }
 
 // Media Query
@@ -128,6 +138,10 @@
           margin-top: 0rem;
           font-size: $twenty-eight;
         }
+      }
+
+      .main__carousel__inner {
+        transition: none;
       }
 
       .main__carousel__img {
