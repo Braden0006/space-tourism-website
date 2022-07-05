@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import "./Homepage.css";
 
 export default function Homepage() {
@@ -19,7 +21,9 @@ export default function Homepage() {
       </div>
       <div className="homepage__button__container">
         <div className="homepage__button__container-container">
-          <button className="homepage__button">EXPLORE</button>
+          <Link to='/destinations'>
+            <button className="homepage__button">EXPLORE</button>
+          </Link>
         </div>
       </div>
     </main>
