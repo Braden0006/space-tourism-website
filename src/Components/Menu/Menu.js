@@ -31,6 +31,7 @@ export default function Menu({ open, toggle }) {
       animate={{ x: open ? 0 : "100rem" }}
     >
       <div className="menu">
+        <span className="menu__line"></span>
         <div className="menu__icon">
           <svg
             onClick={toggle}

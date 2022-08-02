@@ -8,10 +8,6 @@
   position: fixed;
   width: 100vw;
   z-index: 1;
-
-  .navbar__line {
-    display: none;
-  }
 }
 
 // Media Query
@@ -33,14 +29,5 @@
 @media screen and (min-width: 1440px) {
   .navbar {
     padding: 4rem 0rem;
-
-    .navbar__line {
-      display: inline-block;
-      width: 50rem;
-      border: 1px solid $lighter-white;
-      z-index: 1;
-      right: 80rem;
-      position: fixed;
-    }
   }
 }

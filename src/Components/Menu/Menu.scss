@@ -10,10 +10,15 @@
   left: 0;
   transition: 0.3s;
 
+  
   .menu {
     width: 68vw;
     backdrop-filter: blur(4rem);
 
+    .menu__line {
+      display: none;
+    }
+    
     .menu__icon {
       display: flex;
       justify-content: flex-end;
@@ -93,8 +98,21 @@
 
 @media screen and (min-width: 1440px) {
   .menu-container {
+
     
     .menu {
+      position: relative;
+
+      .menu__line {
+        position: absolute;
+        display: inline-block;
+        width: 50rem;
+        border: 1px solid $lighter-white;
+        z-index: 1;
+        right: 55vw;
+        top: 4.5vh;
+        position: fixed;
+      }
 
       .menu__list {
         width: 58vw;
